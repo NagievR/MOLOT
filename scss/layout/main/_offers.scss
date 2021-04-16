@@ -1,0 +1,31 @@
+.offers {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 9999px;
+  }
+
+  &__item {
+    width: 220px;
+    height: 265px;
+    margin-right: 18px;
+    background-color: #50AFC9;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__heading {
+    
+  }
+
+}
+
+

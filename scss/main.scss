@@ -1,4 +1,6 @@
 @import "./layout/container";
+@import "./base/font";
+@import "./vendors/normalize";
 
 // header
 @import "./layout/header/header";
@@ -6,8 +8,7 @@
 @import "./layout/header/popular";
 
 // main 
-
-
-
-@import "./base/font";
-@import "./vendors/normalize";
+@import "./layout/main/main";
+@import "./layout/main/categories";
+// @import
+@import "./layout/main/offers";
