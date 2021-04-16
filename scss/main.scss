@@ -1,4 +1,6 @@
 @import "./layout/container";
+@import "./layout/btns-mobile.app";
+
 @import "./base/font";
 @import "./vendors/normalize";
 
@@ -13,3 +15,6 @@
 @import "./layout/main/product-card";
 @import "./layout/main/offers";
 @import "./layout/main/info";
+@import "./layout/main/mobile-app";
+@import "./layout/main/news-subscribe";
+@import "./layout/footer/footer";

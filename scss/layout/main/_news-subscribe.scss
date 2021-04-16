@@ -1,0 +1,133 @@
+.news-subscribe {
+  background-color: #F2994A;
+
+  &__inner {
+    box-sizing: border-box;
+    padding: 44px 0;
+    height: 170px;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading-wrap,
+  &__subscribe-wrap {
+    width: 50%;
+  }
+
+  &__subscribe-wrap {
+    position: relative;
+  }
+
+  &__terms {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  &__subscribe-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  &__input {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    padding: 0 0 7px 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    &::placeholder {
+      font-size: 16px;
+      color: #4F4F4F;
+    }
+  }
+  
+  &__rules {
+    color: #000;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    width: 440px;
+    line-height: 42px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .news-subscribe {
+    &__inner {
+      height: 122px;
+      padding: 35px 0;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    
+    &__heading {
+      font-size: 18px;
+      line-height: 25px;
+      width: 300px;
+    }
+
+    &__submit {
+      font-size: 14px;
+      top: 2px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .news-subscribe {
+    &__heading-wrap,
+    &__subscribe-wrap {
+      width: 100%;
+    }
+
+    &__inner {
+      height: 194px;
+      padding: 30px 0;
+      flex-direction: column;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    &__submit {
+      font-size: 12px;
+    }
+
+    &__heading {
+      width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .news-subscribe {
+    &__rules {
+      display: block;
+    }
+  }
+}
