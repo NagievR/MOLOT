@@ -1,0 +1,39 @@
+.popular {
+  color: #fff;
+
+  &__heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 21px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        width: 15px;
+        margin-right: 3px;
+      }
+    }
+  }
+
+
+}
+

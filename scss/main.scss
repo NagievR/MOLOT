@@ -1,7 +1,13 @@
-@import "./base/font";
-@import "./layout/page";
 @import "./layout/container";
-@import "./layout/header";
+
+// header
+@import "./layout/header/header";
+@import "./layout/header/search";
+@import "./layout/header/popular";
+
+// main 
+
+
+
+@import "./base/font";
 @import "./vendors/normalize";
-@import "./layout/search";
-@import "./layout/btn-no-style";
