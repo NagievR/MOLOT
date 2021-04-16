@@ -1,0 +1,109 @@
+.header {
+  .lang-active {
+    color: #FFC813;
+  }
+
+  
+  &__head {
+    background-color: #002D04;
+  }
+
+  &__head-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    color: #fff;
+  }
+
+  &__options {
+    display: flex;
+  }
+
+  &__lang-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 44px;
+  }
+
+  &__lang-btn {
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__place-product {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: black;
+    background-color: #FFC813;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+  }
+
+  &__favorite-btn,
+  &__account-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__favorite-btn {
+    margin-right: 35px;
+    position: relative;
+
+    img {
+      width: 25px;
+      height: 19px;
+    }
+  }
+
+  &__account-btn {
+    margin-right: 50px;
+    
+    img {
+      width: 21px;
+      height: 21px; 
+    }
+  }
+
+  &__favorite-count {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #FFC813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+    top: 7px;
+    right: -11px;
+    color: #000;
+  }
+
+  &__body {
+    background-color: #06440b;
+  }
+
+  &__body-inner {
+    padding: 100px 0;
+  }
+
+  &__heading {
+    margin: 0 0 35px 0;
+    font-size: 50px;
+    color: #fff;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__search {
+    margin-bottom: 50px;
+  }
+
+}
+
+
