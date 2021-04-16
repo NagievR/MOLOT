@@ -681,13 +681,6 @@ template {
   margin-right: 0;
 }
 
-.main__top-sales-heading {
-  font-size: 28px;
-  margin: 0;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
 .categories__list {
   padding: 0;
   margin: 0;
@@ -1072,5 +1065,60 @@ template {
 
 .offers__item:last-child {
   margin-right: 0;
+}
+
+.info__company-list {
+  margin: 0;
+  padding: 0 0 50px 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 9999px;
+}
+
+.info__company {
+  width: 205px;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+  justify-content: space-between;
+}
+
+.info__logo-wrap {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.info__logo-wrap img {
+  width: 100%;
+}
+
+.info__company-name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.info__advantages {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 9999px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.info__advantage {
+  background-color: #E8CDBB;
+  width: 380px;
+  height: 250px;
+  margin-right: 15px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=main.css.map */
