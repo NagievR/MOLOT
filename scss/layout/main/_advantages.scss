@@ -1,0 +1,17 @@
+.advantages {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    background-color: #E8CDBB;
+    width: 380px;
+    height: 250px;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
+}
