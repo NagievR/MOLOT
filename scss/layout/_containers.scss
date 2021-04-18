@@ -8,3 +8,9 @@
 .js-move-container {
   padding-left: calc((100vw - 1185px) / 2);
 }
+
+@media (max-width: 1200px) {
+  .js-move-container {
+    padding-left: 20px;
+  }
+}

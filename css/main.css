@@ -10,6 +10,12 @@
   padding-left: calc((100vw - 1185px) / 2);
 }
 
+@media (max-width: 1200px) {
+  .js-move-container {
+    padding-left: 20px;
+  }
+}
+
 .btns-mobile-app {
   display: flex;
   justify-content: space-between;
@@ -72,9 +78,14 @@
 }
 
 @media (max-width: 767px) {
+  .btns-mobile-app {
+    justify-content: space-around;
+    width: 100%;
+  }
   .btns-mobile-app a {
     height: 50px;
-    width: 135px;
+    width: 45%;
+    min-width: 135px;
     padding: 10px 13px;
   }
   .btns-mobile-app p {
@@ -1205,7 +1216,7 @@ template {
   }
   .mobile-app__main-image {
     top: -100px;
-    right: -75px;
+    right: -100px;
   }
   .mobile-app__left-col {
     width: 400px;
@@ -1232,6 +1243,8 @@ template {
     height: 450px;
     padding: 20px;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .mobile-app__main-image {
     width: 320px;
@@ -1468,11 +1481,11 @@ template {
   .footer__mobile-btns-wrap {
     margin-top: 30px;
   }
-  .footer__column:nth-child(3) {
-    width: 20%;
-  }
   .footer__column:nth-child(1), .footer__column:nth-child(2) {
     width: 40%;
+  }
+  .footer__column:nth-child(3) {
+    width: 20%;
   }
   .footer__column:nth-child(4) {
     width: 32%;
@@ -1505,18 +1518,47 @@ template {
   .footer__wrapper {
     font-size: 14px;
   }
-  .footer__column {
-    width: 55%;
-  }
   .footer__mobile-btns-wrap {
-    width: 376px;
+    width: 100%;
   }
   .footer__social-media {
-    margin-right: 20px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer__social-media li {
+    margin-right: 0;
   }
   .footer__social-media li img {
     width: 30px;
     height: 30px;
+  }
+  .footer__column:nth-child(1), .footer__column:nth-child(2), .footer__column:nth-child(3), .footer__column:nth-child(4) {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .footer__column:nth-child(1), .footer__column:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  .footer__contacts {
+    font-size: 10px;
+  }
+  .footer__column:nth-child(4), .footer__social-media {
+    order: unset;
+  }
+  .footer__social-media {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .footer__external-links {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__column:nth-child(1), .footer__column:nth-child(3) {
+    width: 125px;
+    margin-right: 10px;
   }
 }
 

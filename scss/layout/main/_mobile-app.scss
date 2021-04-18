@@ -51,7 +51,7 @@
           
     &__main-image {
       top: -100px;
-      right: -75px;
+      right: -100px;
     }
 
     &__left-col {
@@ -85,6 +85,8 @@
       height: 450px;
       padding: 20px;
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__main-image {

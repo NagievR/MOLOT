@@ -64,9 +64,13 @@
 
 @media (max-width: 767px) {
   .btns-mobile-app {
+    justify-content: space-around;
+    width: 100%;
+
     a {
       height: 50px;
-      width: 135px;
+      width: 45%;
+      min-width: 135px;
       padding: 10px 13px;
     }
 
@@ -88,4 +92,5 @@
       font-size: 16px;
     }
   }
+
 }
