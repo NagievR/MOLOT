@@ -83,7 +83,9 @@
   }
 
   &__body {
-    background-color: #06440b;
+    background-image: url('./../assets/images/background.svg');
+    background-size: cover;
+    background-position: center;
   }
 
   &__body-inner {
@@ -103,5 +105,3 @@
     margin-bottom: 50px;
   }
 }
-
-
