@@ -4,11 +4,19 @@ const bottomBorderWidth = parseInt(getComputedStyle(textarea).borderBottomWidth)
 const topBorderWidth = parseInt(getComputedStyle(textarea).borderTopWidth);
 const bordersHorizontal = bottomBorderWidth + topBorderWidth;
 
-const resize = () => {
-  const scrollHeight = textarea.scrollHeight;
-  textarea.style.height = scrollHeight + bordersHorizontal + 'px';
+export const expandTextarea = () => {
+
+  const resize = () => {
+    const scrollHeight = textarea.scrollHeight;
+    textarea.style.height = scrollHeight + bordersHorizontal + 'px';
+  
+    if (!textarea.value) {
+      textarea.style.height = '';
+    }
+  };
+  
+  textarea.addEventListener('input', resize);
+  
+  resize();
 };
 
-textarea.addEventListener('input', resize);
-
-resize();

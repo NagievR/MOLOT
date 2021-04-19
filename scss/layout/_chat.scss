@@ -1,6 +1,23 @@
 .chat {
-  width: 100%;
-  
+  .my-msg {
+    border-color: #FFC813;
+
+    &::before {
+      border-bottom: 8px solid #FFC813;
+    }
+  }
+
+  .choose-chat {
+    display: none;
+  }
+
+  width: 60%;
+  background-color: #fff;
+  padding: 15px;
+  height: 745px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
   &__top-block {
     padding: 10px 18px;
     background-color: #F2F2F2;
@@ -11,18 +28,21 @@
   }
   
   &__options {
-    img {
-      margin-right: 20px;
-      cursor: pointer;
-      width: 20px;
-  
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    display: flex;
+  }
+
+  &__favorite-btn { 
+    margin-right: 20px;
+  }
+
+  &__option-btn {
+    margin-right: 20px;
+    cursor: pointer;
+    width: 20px;
   }
   
   &__top-block-info {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -30,8 +50,8 @@
   }
 
   &__product-photo {
-    width: 64px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +67,8 @@
   
   &__field {
     overflow-y: auto;
-    max-height: 566px;
+    max-height: 515px;
+
     &::-webkit-scrollbar{
       width: 3px;
       background-color: #E0E0E0;
@@ -66,13 +87,12 @@
   }
 
   &__product-name {
-    color: #000;
+    color: #F2994A;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     border-bottom: 1px solid transparent;
     
     &:hover {
-      color: #F2994A;
       border-bottom: 1px solid #F2994A;
       cursor: pointer;
     }
@@ -93,25 +113,28 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    max-width: 490px;
+    max-width: 300px;
     box-sizing: border-box;
     margin-bottom: 40px;
+  }
+  
+  &__message-text {
+    margin: 10px 55px 10px 10px;
   }
 
   &__sent-time {
     font-size: 10px;
     color: #828282;
     position: absolute;
-    bottom: -16px;
-    right: 0;
+    bottom: 5px;
+    right: 10px;
   }
 
   &__message-body {
     border: 1px solid #E0E0E0;
-    padding: 10px 15px;
     border-radius: 4px;
     border-bottom-left-radius: 0;
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
     position: relative;
 
@@ -136,6 +159,10 @@
 
   &__textarea-wrap {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
     
     img {
       cursor: pointer;
@@ -143,7 +170,7 @@
   }
 
   &__multiple-photo {
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -154,7 +181,7 @@
       cursor: pointer;
       margin: 2px;
       height: 80px;
-      width: 100px;
+      width: 48%;
       
       img {
         object-fit: cover;
@@ -169,7 +196,7 @@
     width: 26px;
     height: 25px;
     right: 10px;
-    bottom: 15px;
+    bottom: 13px;
   }
 
   &__textarea {
@@ -181,7 +208,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   &__icon-wrap {
@@ -202,11 +229,11 @@
   &__file-wrap {
     display: flex;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin: 10px 55px 10px 10px;
   }
 
   &__file-name {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   &__file-size {
@@ -214,17 +241,81 @@
   }
 
   &__attach-file {
-    position: absolute;
-    bottom: 15px;
-    left: -30px;
+    margin-right: 15px;
+    margin-bottom: 5px;
   }
 
   &__photo-wrap {
+    height: 100px;
+    margin-bottom: 20px;
+
     img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
       cursor: pointer;
-      height: 250px;
+      height: 100px;
       width: 100%;
       object-fit: cover;
     }
   }
+
+  &__advices {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+
+  &__advices-text { 
+    cursor: pointer;
+    padding-right: 50px;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &::after {
+      content: url('http://127.0.0.1:5500/chat/assets/icons/arrow.svg');
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
+
+@media (max-width: 1200px) {
+  .chat {
+    &__product-name {
+      font-size: 12px;
+    }
+
+    &__top-block {
+      padding: 10px;
+    }
+
+    &__favorite-btn { 
+      margin-right: 13px;
+    }
+
+    &__option-btn {
+      width: 15px;
+    }
+
+    &__options {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__product-photo {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .chat {
+    display: none;
+  }
+}
+

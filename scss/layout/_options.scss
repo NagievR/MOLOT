@@ -21,6 +21,7 @@
   }
 
   &__archivate-icon {
+    width: 15px;
     transform: translateY(-1px);
   }
 
@@ -30,5 +31,11 @@
 
   &__archivate-btn {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .options {
+    width: auto;
   }
 }

@@ -11,15 +11,15 @@
 <body>
 
   <div class="chat-page">
-    <div class="container">
-      <div class="chat-page__inner">
+    <div class="chat-page__inner">
+      <div class="container">
 
         <h1 class="chat-page__heading">Сообщения</h1>
         <div class="chat-page__search-wrap">
           <input 
             class="chat-page__search-input" 
             type="text" 
-            placeholder="Поиск по имени собеседника или названию магазина" 
+            placeholder="Поиск по чатам и магазинам" 
           />
         </div>
 
@@ -38,18 +38,20 @@
           </div>
           <div class="options__col">
             <div class="options__archivate-btn">
-              <img class="options__archivate-icon" src="./assets/images/archivate.svg" alt="в архив" />
+              <img class="options__archivate-icon" src="assets/icons/archive.svg" alt="в архив" />
               <div class="options__archivate-title">В архив</div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="chat-page__container">
         <main class="chat-page__main">
           <div class="recent chat-page__recent">
             <ul class="recent__dialog-list">
   
               <li class="recent__dialog-card new-message">
-                <input class="checkbox" type="checkbox" disabled />
+                <input class="checkbox hide" type="checkbox" disabled />
                 <div class="recent__dialog">
                   <div class="recent__new-messages-count">11</div>
                   <div class="recent__dialog-inner">
@@ -59,9 +61,9 @@
                     <div class="recent__dialog-wrap">
                       <div class="recent__dialog-info">
                         <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
+                        <div class="recent__date">21.01.21</div>
                       </div>
-                      <div class="recent__short-message">
+                      <div class="recent__preview-message">
                         В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
                       </div>
                     </div>
@@ -80,9 +82,9 @@
                     <div class="recent__dialog-wrap">
                       <div class="recent__dialog-info">
                         <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
+                        <div class="recent__date">21.01.21</div>
                       </div>
-                      <div class="recent__short-message">
+                      <div class="recent__preview-message">
                         В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
                       </div>
                     </div>
@@ -101,240 +103,9 @@
                     <div class="recent__dialog-wrap">
                       <div class="recent__dialog-info">
                         <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
+                        <div class="recent__date">21.01.21</div>
                       </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-  
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-              
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-  
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-              
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-              
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-              
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-              
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
-                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                      </div>
-                    </div>
-                  </div> <!-- /recent__dialog-inner -->
-                </div> <!-- /recent__dialog -->
-              </li> <!-- /recent__dialog-card -->
-  
-              <li class="recent__dialog-card">
-                <input class="checkbox" type="checkbox" disabled />
-                <div class="recent__dialog">
-                  <div class="recent__new-messages-count">11</div>
-                  <div class="recent__dialog-inner">
-                    <div class="avatar recent__avatar">
-                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                    </div>
-                    <div class="recent__dialog-wrap">
-                      <div class="recent__dialog-info">
-                        <div class="recent__sender-name">Диденко Дмитрий</div>
-                        <div class="recent__date">21.01.2021</div>
-                      </div>
-                      <div class="recent__short-message">
+                      <div class="recent__preview-message">
                         В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
                       </div>
                     </div>
@@ -346,202 +117,232 @@
           </div> <!-- /recent -->
 
           <div class="chat">
+            <div class="chat__inner">
 
-            <div class="chat__top-block">
-              <div class="chat__product-photo">
-                <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1619395200&Signature=EP1koL8hye~NxMAt0XqHnI6rJnJiP0qvdRbwJysn2n2JS6mKFgol7ZNOpS2qH1iCaQ9JmrPSUUBJJIdblQQsQRQ7~m6~5rYQvbObqQOOXqI7fj8mBoZtcCHPG4QClWilwE~41UZedI6XDuMQn1DdRL3UuSvdalxX-JOmwSG5Pa7a-rlmTiHwzVbsgRdHy4Gbl8HOXWO4NbD6ZEGn8-PpBFgTMfWY-1XXL-jjunX1mMD5oXI8N8nD0zf9ybWA7W8Hpvz9z1hNCipE7cKoPGNrOCuB~RZNqgHZr3WeSMHGQLOipybsSi8uiTdzJ-RdMRQT3Y9CEA~CVhcFuzG8f-BVyw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара" />
-              </div>
-              <div class="chat__top-block-info">
-                <div class="chat__col">
-                  <div class="chat__name">Смоленко Дмитрий</div>
-                  <a class="chat__product-name" href="#">Стеклоблок Basic 190x190x80 1908 W зеленый</a>
+              <div class="chat__top-block">
+                <div class="chat__product-photo">
+                  <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1619395200&Signature=EP1koL8hye~NxMAt0XqHnI6rJnJiP0qvdRbwJysn2n2JS6mKFgol7ZNOpS2qH1iCaQ9JmrPSUUBJJIdblQQsQRQ7~m6~5rYQvbObqQOOXqI7fj8mBoZtcCHPG4QClWilwE~41UZedI6XDuMQn1DdRL3UuSvdalxX-JOmwSG5Pa7a-rlmTiHwzVbsgRdHy4Gbl8HOXWO4NbD6ZEGn8-PpBFgTMfWY-1XXL-jjunX1mMD5oXI8N8nD0zf9ybWA7W8Hpvz9z1hNCipE7cKoPGNrOCuB~RZNqgHZr3WeSMHGQLOipybsSi8uiTdzJ-RdMRQT3Y9CEA~CVhcFuzG8f-BVyw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара" />
                 </div>
-                <div class="chat__col">
-                  <div class="chat__options">
-                    <img class="chat__favorite-btn" src="./assets/images/favorite.svg" alt="избранное" />
-                    <img class="chat__archive-btn" src="./assets/images/archive.svg" alt="архив" />
+                <div class="chat__top-block-info">
+                  <div class="chat__col">
+                    <div class="chat__name">Смоленко Дмитрий</div>
+                    <a class="chat__product-name" href="#">Стеклоблок Basic 190x190x80 1908 W зеленый</a>
                   </div>
-                </div>
-              </div>
-            </div> <!-- /chat__top-block -->
+                  <div class="chat__col">
+                    <div class="chat__options">
 
-            <div class="chat__field">
+                      <svg class="chat__favorite-btn chat__option-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.09478 1.92837C9.45471 1.16162 10.5453 1.16162 10.9052 1.92838L12.8635 6.10005C13.0051 6.40163 13.2875 6.6129 13.6168 6.66351L18.0777 7.34914C18.882 7.47275 19.2098 8.45394 18.6413 9.03614L15.3527 12.4042C15.1309 12.6314 15.0302 12.9505 15.0813 13.2638L15.8484 17.9672C15.9828 18.7911 15.1081 19.4073 14.3776 19.0033L10.4839 16.8501C10.1828 16.6836 9.8172 16.6836 9.51608 16.8501L5.62245 19.0033C4.89189 19.4073 4.01718 18.7911 4.15157 17.9672L4.91872 13.2638C4.96983 12.9505 4.86909 12.6314 4.64727 12.4042L1.35869 9.03614C0.790242 8.45394 1.11804 7.47275 1.92229 7.34914L6.38318 6.66351C6.71247 6.6129 6.99492 6.40163 7.13649 6.10005L9.09478 1.92837Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  
+                      <svg class="chat__archive-btn chat__option-btn" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 17C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H8L10 4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6V17Z" stroke="#25282B" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
 
-              <div class="chat__message-wrap">
-                <div class="chat__avatar-smaller avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__message-text">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <div class="chat__sent-time">22:28</div>
-                </div>
-              </div>
-                            
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__message-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  </div>
-                  <div class="chat__sent-time">22:28</div>
-                </div>
-              </div>
-
-              <div class="chat__date">21.01.2021</div>
-
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__photo-wrap">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa57/3c74/cc2e36c55f8982482009acb3a59e0768?Expires=1619395200&Signature=hhOeDO827X~0-D4GZVApeTYZTxk7A439TD6GcZpZb7G06i4SvFdPbIN2pXfsFBZtfRQtko~NAAC7g6KJWEfep32qeJ2TWbOujVwHfgsErleECuP4Dl1vZKzOSJ2hI9w4QE3RppBVoFN~IueElxF6PjdkVC7nfnlj0duyRsQV3e0qOAz2cgYo4zEoFBolXxdl9o6zMgxG5OpIgnOr~aLGduPrKf8PnDngr1Do7l4Jao47pdCzYAnF8ExTtW42DO5j4udPPBLUyrBkld2cnWxI77o3B~ucA9BWcHh-e4Gu63hLnajS5EvdjbhhA7UFrnJUBVVBte8EtmRKAs1aa-6u5w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
-                  </div>
-                  <div class="chat__sent-time">22:28</div>
-                  <div class="chat__message-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, officia.
-                  </div>
-                </div>
-              </div>
-
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__photo-wrap">
-                    <img src="https://buddvir.ua/image/cache/data/1c/10713212_lazerniy_dalekom_r_glm_40_bosch_ukt_zed_9015_30_10_00-800x800.jpg" />
-                  </div>
-                  <div class="chat__sent-time">22:28</div>
-                </div>
-              </div>
-
-              <div class="chat__date">21.01.2021</div>   
-
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__file-wrap">
-                    <div class="chat__icon-wrap">
-                      <img src="./assets/images/file.svg" alt="прикрепленный файл" />
-                    </div>
-                    <div class="chat__file-info">
-                      <div class="chat__file-name">Строитель.exel</div>
-                      <div class="chat__file-size">2.5
-                        <span class="chat__file-size-metric">МБ</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="chat__message-text">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <div class="chat__sent-time">22:28</div>
-                </div>
-              </div>
-
-              <div class="chat__date">21.01.2021</div>
-
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <div class="chat__sent-time">22:28</div>                  
-                  <div class="chat__file-wrap">
-                    <div class="chat__icon-wrap">
-                      <img src="./assets/images/file.svg" alt="прикрепленный файл" />
-                    </div>
-                    <div class="chat__file-info">
-                      <div class="chat__file-name">Строитель.exel</div>
-                      <div class="chat__file-size">2.5
-                        <span class="chat__file-size-metric">МБ</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="chat__file-wrap">
-                    <div class="chat__icon-wrap">
-                      <img src="./assets/images/file.svg" alt="прикрепленный файл" />
-                    </div>
-                    <div class="chat__file-info">
-                      <div class="chat__file-name">Строитель.exel</div>
-                      <div class="chat__file-size">2.5
-                        <span class="chat__file-size-metric">МБ</span>
-                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> <!-- /chat__top-block -->
 
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                </div>
-                <div class="chat__message-body">
-                  <ul class="chat__multiple-photo">
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                    <li><img src="https://buddvir.ua/image/cache/data/1c/10713212_lazerniy_dalekom_r_glm_40_bosch_ukt_zed_9015_30_10_00-800x800.jpg" alt='прикрепленное фото' /></li>
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                    <li><img src="https://images.comfortdeluxe.ua/2014/05/stroitelnye-materialy.jpg" alt='прикрепленное фото' /></li>
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                    <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
-                  </ul>
-                  <div class="chat__message-text">
-                    im a very serious man
+              <div class="chat__field">
+
+                <div class="chat__message-wrap">
+                  <div class="chat__avatar-smaller avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body">
+                    <div class="chat__message-text">
+                      компактные решения
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
                   </div>
                 </div>
-              </div>
-
-              <div class="chat__message-wrap">
-                <div class="avatar-smaller chat__avatar-smaller">
-                  <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                              
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body">
+                    <div class="chat__message-text">
+                      Ведь туда можно установить и менее компактные решения, что особенно
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                  </div>
                 </div>
-                <div class="chat__message-body">
-                  <div class="chat__multiple-photo">
-                    <!-- <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+
+                <div class="chat__date">21.01.21</div>
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body">
+                    <div class="chat__photo-wrap">
+                      <img src="https://s3-alpha-sig.figma.com/img/aa57/3c74/cc2e36c55f8982482009acb3a59e0768?Expires=1619395200&Signature=hhOeDO827X~0-D4GZVApeTYZTxk7A439TD6GcZpZb7G06i4SvFdPbIN2pXfsFBZtfRQtko~NAAC7g6KJWEfep32qeJ2TWbOujVwHfgsErleECuP4Dl1vZKzOSJ2hI9w4QE3RppBVoFN~IueElxF6PjdkVC7nfnlj0duyRsQV3e0qOAz2cgYo4zEoFBolXxdl9o6zMgxG5OpIgnOr~aLGduPrKf8PnDngr1Do7l4Jao47pdCzYAnF8ExTtW42DO5j4udPPBLUyrBkld2cnWxI77o3B~ucA9BWcHh-e4Gu63hLnajS5EvdjbhhA7UFrnJUBVVBte8EtmRKAs1aa-6u5w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                    <div class="chat__message-text">
+                      Понятно, что в типовом корпусе
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body">
+                    <div class="chat__photo-wrap">
+                      <img src="https://buddvir.ua/image/cache/data/1c/10713212_lazerniy_dalekom_r_glm_40_bosch_ukt_zed_9015_30_10_00-800x800.jpg" />
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                  </div>
+                </div>
+
+                <div class="chat__date">21.01.2020</div>   
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
                     <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
-                    <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' /> -->
                   </div>
-                  <div class="chat__file-wrap">
-                    <div class="chat__icon-wrap">
-                      <img src="./assets/images/file.svg" alt="прикрепленный файл" />
-                    </div>
-                    <div class="chat__file-info">
-                      <div class="chat__file-name">Строитель.exel</div>
-                      <div class="chat__file-size">2.5
-                        <span class="chat__file-size-metric">МБ</span>
+                  <div class="chat__message-body my-msg">
+                    <div class="chat__file-wrap">
+                      <div class="chat__icon-wrap">
+                        <img src="./assets/icons/file.svg" alt="прикрепленный файл" />
+                      </div>
+                      <div class="chat__file-info">
+                        <div class="chat__file-name">Строитель.exel</div>
+                        <div class="chat__file-size">2.5
+                          <span class="chat__file-size-metric">МБ</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="chat__message-text">
-                    im a very serious man
+                    <div class="chat__message-text">
+                      Lorem ipsum dolor sit amet.
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
                   </div>
                 </div>
+
+                <div class="chat__date">21.01.21</div>
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body my-msg">
+                    <div class="chat__sent-time">22:28</div>                  
+                    <div class="chat__file-wrap">
+                      <div class="chat__icon-wrap">
+                        <img src="./assets/icons/file.svg" alt="прикрепленный файл" />
+                      </div>
+                      <div class="chat__file-info">
+                        <div class="chat__file-name">Строитель.exel</div>
+                        <div class="chat__file-size">2.5
+                          <span class="chat__file-size-metric">МБ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__file-wrap">
+                      <div class="chat__icon-wrap">
+                        <img src="./assets/icons/file.svg" alt="прикрепленный файл" />
+                      </div>
+                      <div class="chat__file-info">
+                        <div class="chat__file-name">Строитель.exel</div>
+                        <div class="chat__file-size">2.5
+                          <span class="chat__file-size-metric">МБ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__file-wrap">
+                      <div class="chat__icon-wrap">
+                        <img src="./assets/icons/file.svg" alt="прикрепленный файл" />
+                      </div>
+                      <div class="chat__file-info">
+                        <div class="chat__file-name">Строитель.exel</div>
+                        <div class="chat__file-size">2.5
+                          <span class="chat__file-size-metric">МБ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                  </div>
+                </div>
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body my-msg">
+                    <ul class="chat__multiple-photo">
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                      <li><img src="https://buddvir.ua/image/cache/data/1c/10713212_lazerniy_dalekom_r_glm_40_bosch_ukt_zed_9015_30_10_00-800x800.jpg" alt='прикрепленное фото' /></li>
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                      <li><img src="https://images.comfortdeluxe.ua/2014/05/stroitelnye-materialy.jpg" alt='прикрепленное фото' /></li>
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                      <li><img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='прикрепленное фото' /></li>
+                    </ul>
+                    <div class="chat__message-text">
+                      Строитель
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                  </div>
+                </div>
+
+                <div class="chat__message-wrap">
+                  <div class="avatar-smaller chat__avatar-smaller">
+                    <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                  </div>
+                  <div class="chat__message-body  my-msg">
+                    <div class="chat__multiple-photo">
+                      <!-- <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                      <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' />
+                      <img src="https://s3-alpha-sig.figma.com/img/1561/62a5/02e941db61bcdbe2a17ccf701a0a7801?Expires=1619395200&Signature=Hbyf~8gJR71v1xTKO5dSJ3Ue8r70e~k~2~UuwrSnsYB~KDz-k~GNH0fQJk66~NNEGSjaCcWB1L4-UCbZEhXg1MWJ6dslit7OvzJ4sTN4GDT1Oz77VfdPXxXezwRhHtyF-4RxnVyObpV7Kky4a0AxBr7e3o6-65iTZQ-cKqTvzs4~KrHhNvQ8bHxHJRONbajl~wvTdEoS40X4r5-EA~PjPk-Q3GM~~TZjKVs321QlWBjvj1qE05RoqVo-oHdMfy05LrlWQ~tGoMwtXq-MBEKSFjZpJ2MP7ignvbCG2HLzKA9cZXexkOfC1MqqS4iPg9kb9tOnxUo1om-XU78BvbsILQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='аватар' /> -->
+                    </div>
+                    <div class="chat__file-wrap">
+                      <div class="chat__icon-wrap">
+                        <img src="./assets/icons/file.svg" alt="прикрепленный файл" />
+                      </div>
+                      <div class="chat__file-info">
+                        <div class="chat__file-name">Строитель.exel</div>
+                        <div class="chat__file-size">2.5
+                          <span class="chat__file-size-metric">МБ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__message-text">
+                      Строитель
+                    </div>
+                    <div class="chat__sent-time">22:28</div>
+                  </div>
+                </div>
+              </div> <!-- /chat__field -->
+
+              <div class="chat__textarea-wrap">
+                <img class="chat__attach-file" src="./assets/icons/attach-files.svg" alt="прикрепить" />
+                <textarea class="chat__textarea" resize="vertical"></textarea>
+                <img class="chat__send" src="./assets/icons/send.svg" alt="отправить" />
               </div>
 
-            </div> <!-- /chat__field -->
-
-            <div class="chat__textarea-wrap">
-              <img class="chat__attach-file" src="./assets/images/attach-file.svg" alt="прикрепить" />
-              <textarea class="chat__textarea" resize="vertical"></textarea>
-              <img class="chat__send" src="./assets/images/send.svg" alt="отправить" />
-            </div>
-
+              <div class="chat__advices">
+                <!-- <div class="chat__advices-text-wrap"> -->
+                  <div class="chat__advices-text">
+                    советы по безопасности
+                  </div>
+                <!-- </div> -->
+              </div>
+             
+            </div> <!-- /chat__inner -->
           </div> <!-- /chat -->
 
         </main> <!-- /chat-page__main -->
       </div> <!-- /chat-page__inner -->
-    </div> <!-- /container -->
+    </div> <!-- /chat-page__container -->
   </div> <!-- /chat-page -->
 
-  <script src="/scripts/textarea-expanding.js"></script>
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
 
