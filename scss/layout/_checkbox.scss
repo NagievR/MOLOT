@@ -11,3 +11,10 @@
   border-radius: 40px;
   margin-right: 16px;
 }
+
+@media (max-width: 767px) {
+  .checkbox {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}

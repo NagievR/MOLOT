@@ -125,6 +125,13 @@
   display: none;
 }
 
+@media (max-width: 767px) {
+  .checkbox {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
 .recent {
   width: 40%;
   flex-shrink: 0;
@@ -231,18 +238,6 @@
   max-width: 280px;
 }
 
-.new-message .recent__new-messages-count {
-  display: flex;
-}
-
-.new-message .recent__dialog {
-  background-color: #fff;
-}
-
-.active-chat .recent__dialog {
-  border-left: 5px solid #FFC813;
-}
-
 @media (max-width: 1200px) {
   .recent__dialog {
     padding: 10px;
@@ -266,20 +261,32 @@
   }
 }
 
+.active-chat .recent__dialog {
+  border-left: 5px solid #FFC813;
+}
+
+.new-message .recent__new-messages-count {
+  display: flex;
+}
+
+.new-message .recent__dialog {
+  background-color: #fff;
+}
+
 @media (max-width: 767px) {
   .recent {
     width: 100%;
   }
   .recent__dialog-card {
     margin-bottom: 0;
-    border-bottom: none;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #fff;
   }
   .recent__dialog {
     margin-right: 0;
     border-radius: 0;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: none;
     padding: 10px 20px;
   }
   .recent__dialog-list {
@@ -296,11 +303,19 @@
   .recent__new-messages-count {
     right: 20px;
   }
+  .recent__dialog-card {
+    background-color: #F6F6F6;
+  }
   .active-chat {
     border-left: 4px solid #FFC813;
+    background-color: #fff;
   }
   .active-chat .recent__dialog {
     border-left: none;
+    background-color: #fff;
+  }
+  .new-message {
+    background-color: #fff;
   }
 }
 
