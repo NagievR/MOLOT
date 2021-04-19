@@ -12,6 +12,14 @@
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__separate-line {
+    border-top: 1px solid rgba(130, 130, 130, 0.4);
   }
 
   &__contacts {
@@ -19,8 +27,6 @@
   }
 
   &__column {
-    // width: 180px;
-
     li {
       margin-bottom: 15px;
 

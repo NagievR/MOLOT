@@ -1,8 +1,9 @@
-@import "./layout/containers";
-@import "./layout/btns-mobile.app";
-
 @import "./base/font";
 @import "./vendors/normalize";
+
+// general components
+@import "./layout/containers";
+@import "./layout/btns-mobile.app";
 
 // header
 @import "./layout/header/header";
@@ -16,6 +17,9 @@
 @import "./layout/main/offers";
 @import "./layout/main/mobile-app";
 @import "./layout/main/news-subscribe";
-@import "./layout/footer/footer";
 @import "./layout/main/advantages";
 @import "./layout/main/top-companies";
+
+// footer
+@import "./layout/footer/footer";
+@import "./layout/footer/bottom-block";

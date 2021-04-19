@@ -25,6 +25,7 @@
 
   &__dropdown,
   &__input {
+    box-sizing: border-box;
     border: 1px solid #BDBDBD;
     background-color: inherit;
     border-radius: 4px;
@@ -33,7 +34,6 @@
   &__dropdown {
     width: 249px;
     margin: 0;
-    box-sizing: border-box;
     height: 50px;
     position: relative;
     border-left: none;
@@ -152,6 +152,34 @@
     &::placeholder {
       font-size: 14px;
       color: #4F4F4F;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search {
+    &__find::after{
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);    
+    }
+
+    &__dropdown,
+    &__selected,
+    &__find {
+      // padding-bottom: 0;
+      // padding-top: 0;
+      width: 46px; 
+    }
+
+    &__selected::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);   
+    } 
+
+    &__selected::before {
+      content: none;
     }
   }
 }
