@@ -39,3 +39,9 @@
     width: auto;
   }
 }
+
+@media (max-width: 767px) {
+  .options {
+    display: none;
+  }
+}
