@@ -81,7 +81,7 @@
     scrollbar-color: #E0E0E0 transparent;
   }
 
-  &__name {
+  &__user-name{
     font-size: 14px;
     margin-bottom: 10px;
   }
@@ -132,6 +132,7 @@
 
   &__message-body {
     border: 1px solid #E0E0E0;
+    background-color: #fff;
     border-radius: 4px;
     border-bottom-left-radius: 0;
     font-size: 14px;
@@ -312,10 +313,60 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .chat {
     display: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+
+    &__top-block {
+      border-radius: 0;
+      background-color: rgb(182, 171, 171);
+      margin-bottom: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    &__col:nth-child(1) {
+      width: 100%;
+    }
+
+    &__col:nth-child(2) {
+      display: none;
+    }
+
+    &__product-photo {
+      display: none;
+    }
+
+    &__field {
+      background-color: #F6F6F6;
+      padding: 20px;
+    }
+
+    &__product-name {
+      color: #000;
+      border-bottom: none;
+      display: block;
+      padding: 11px 20px;
+
+      &:hover {
+        border-bottom-color: #E0E0E0;
+      }
+    }
+
+    &__product-name,
+    &__user-name{
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    &__user-name{
+      margin-bottom: 0;
+      padding: 10px 20px;
+    }
+
   }
+
 }
 

@@ -1,5 +1,5 @@
 .chat-page {
-  background-color: #fafafa;
+  background-color: #F6F6F6;
 
   &__heading {
     margin: 40px 0 50px 0;
@@ -14,7 +14,19 @@
   &__recent {
     margin-right: 30px;
     min-width: 330px;
-    // min-width: 100px;
+  }
+
+  &__mob-choose-wrap {
+    position: relative;
+    display: none;
+  }
+
+  &__mob-choose {
+    color: #F2994A;
+    font-size: 12px;
+    position: absolute;
+    top: -32px;
+    cursor: pointer;
   }
 
   &__search-input {
@@ -68,12 +80,22 @@
       font-size: 22px;
       text-align: center;
       margin-top: 0px;
-      margin-bottom: 10px;
+      margin-bottom: 1.5vh;
     }
 
     &__search-input {
       padding: 10px 24px;
       border-radius: 10px;
+      margin-bottom: 4vh;
     }
+
+    &__recent {
+      min-width: unset;
+    }
+
+    &__mob-choose-wrap {
+      position: relative;
+      display: block;
+    }  
   }
 }
