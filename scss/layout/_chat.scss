@@ -315,6 +315,18 @@
 
 @media (max-width: 767px) {
   .chat {
+
+    .my-msg {
+      max-width: 100%;
+      flex-flow: row-reverse;
+    }
+
+    &.my-msg {
+      &__message-body {
+        background-color: red;
+      }
+    }
+
     display: none;
     width: 100%;
     border-radius: 0;

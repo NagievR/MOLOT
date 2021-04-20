@@ -709,6 +709,13 @@
     border-radius: 0;
     padding: 0;
   }
+  .chat .my-msg {
+    max-width: 100%;
+    flex-flow: row-reverse;
+  }
+  .chat.my-msg__message-body {
+    background-color: red;
+  }
   .chat__top-block {
     border-radius: 0;
     background-color: #b6abab;
