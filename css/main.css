@@ -710,11 +710,23 @@
     padding: 0;
   }
   .chat .my-msg {
-    max-width: 100%;
-    flex-flow: row-reverse;
+    border-radius: 4px;
   }
-  .chat.my-msg__message-body {
-    background-color: red;
+  .chat .my-msg::before {
+    right: -7px;
+    left: unset;
+    border-left: 7px solid transparent;
+    border-bottom: 8px solid blue;
+  }
+  .chat .my-msg::after {
+    right: 0;
+    left: unset;
+    bottom: -1px;
+    border-left: 7px solid transparent;
+    border-bottom: 8px solid red;
+  }
+  .chat .my-msg {
+    max-width: 100%;
   }
   .chat__top-block {
     border-radius: 0;

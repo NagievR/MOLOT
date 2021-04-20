@@ -317,14 +317,31 @@
   .chat {
 
     .my-msg {
-      max-width: 100%;
-      flex-flow: row-reverse;
+      border-radius: 4px;
+  
+      &::before {
+        right: -7px;
+
+        left: unset;
+
+        border-left: 7px solid transparent;
+        border-bottom: 8px solid blue;
+      }
+
+      &::after {
+        right: 0;
+
+        left: unset;
+        bottom: -1px;
+
+        border-left: 7px solid transparent;
+        border-bottom: 8px solid red;
+      }
     }
 
-    &.my-msg {
-      &__message-body {
-        background-color: red;
-      }
+    .my-msg {
+      max-width: 100%;
+      // flex-flow: row-reverse;
     }
 
     display: none;
