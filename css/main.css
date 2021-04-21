@@ -402,14 +402,6 @@
   border-radius: 10px;
 }
 
-.chat .my-msg {
-  border-color: #FFC813;
-}
-
-.chat .my-msg::before {
-  border-bottom: 8px solid #FFC813;
-}
-
 .chat .choose-chat {
   display: none;
 }
@@ -510,7 +502,6 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  max-width: 300px;
   box-sizing: border-box;
   margin-bottom: 40px;
 }
@@ -535,6 +526,7 @@
   font-size: 14px;
   box-sizing: border-box;
   position: relative;
+  max-width: 300px;
 }
 
 .chat__message-body::before {
@@ -568,12 +560,12 @@
 }
 
 .chat__multiple-photo {
-  margin: 0 0 20px 0;
+  margin: 5px 0 10px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  margin-bottom: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .chat__multiple-photo li {
@@ -697,9 +689,20 @@
     right: 0;
     top: 0;
   }
+  .chat__message-wrap {
+    margin-bottom: 20px;
+  }
   .chat__product-photo {
     margin-right: 10px;
   }
+}
+
+.my-msg .chat__message-body {
+  border-color: #FFC813;
+}
+
+.my-msg .chat__message-body::before {
+  border-bottom: 8px solid #FFC813;
 }
 
 @media (max-width: 767px) {
@@ -709,24 +712,8 @@
     border-radius: 0;
     padding: 0;
   }
-  .chat .my-msg {
-    border-radius: 4px;
-  }
-  .chat .my-msg::before {
-    right: -7px;
-    left: unset;
-    border-left: 7px solid transparent;
-    border-bottom: 8px solid blue;
-  }
-  .chat .my-msg::after {
-    right: 0;
-    left: unset;
-    bottom: -1px;
-    border-left: 7px solid transparent;
-    border-bottom: 8px solid red;
-  }
-  .chat .my-msg {
-    max-width: 100%;
+  .chat__message-wrap {
+    margin-bottom: 15px;
   }
   .chat__top-block {
     border-radius: 0;
@@ -747,6 +734,11 @@
   .chat__field {
     background-color: #F6F6F6;
     padding: 20px;
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+  .chat__field::-webkit-scrollbar {
+    width: 0;
   }
   .chat__product-name {
     color: #000;
@@ -757,12 +749,48 @@
   .chat__product-name:hover {
     border-bottom-color: #E0E0E0;
   }
+  .chat__multiple-photo {
+    margin-top: 5px;
+  }
+  .chat__multiple-photo li {
+    height: 70px;
+    width: 48%;
+  }
+  .chat__message-body {
+    max-width: 60%;
+    min-width: 205px;
+  }
   .chat__product-name, .chat__user-name {
     border-bottom: 1px solid #E0E0E0;
   }
   .chat__user-name {
     margin-bottom: 0;
     padding: 10px 20px;
+  }
+  .my-msg {
+    flex-flow: row-reverse;
+  }
+  .my-msg .chat__message-body {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    margin-right: 8px;
+  }
+  .my-msg .chat__message-body::before {
+    border-right: 8px solid red;
+    position: absolute;
+    bottom: -1px;
+    left: unset;
+    right: -8px;
+  }
+  .my-msg .chat__message-body::after {
+    content: none;
+    position: absolute;
+    bottom: 0px;
+    left: unset;
+    right: -8px;
+  }
+  .my-msg .chat__avatar-smaller {
+    display: none;
   }
 }
 

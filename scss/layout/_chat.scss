@@ -1,11 +1,7 @@
-.chat {
-  .my-msg {
-    border-color: #FFC813;
 
-    &::before {
-      border-bottom: 8px solid #FFC813;
-    }
-  }
+
+.chat {
+
 
   .choose-chat {
     display: none;
@@ -113,9 +109,10 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    max-width: 300px;
+    // max-width: 300px;
     box-sizing: border-box;
     margin-bottom: 40px;
+    
   }
   
   &__message-text {
@@ -138,7 +135,8 @@
     font-size: 14px;
     box-sizing: border-box;
     position: relative;
-
+    max-width: 300px;
+    
     &::before {
       content: '';
       border-left: 7px solid transparent;
@@ -171,12 +169,12 @@
   }
 
   &__multiple-photo {
-    margin: 0 0 20px 0;
+    margin: 5px 0 10px 0;
     padding: 0;
     list-style-type: none;
     display: flex;
-    margin-bottom: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 
     li {
       cursor: pointer;
@@ -307,8 +305,24 @@
       top: 0;
     }
 
+    &__message-wrap {
+      margin-bottom: 20px;
+    }
+
     &__product-photo {
       margin-right: 10px;
+    }
+  }
+}
+
+.my-msg {
+  .chat {
+    &__message-body {
+      border-color: #FFC813;
+
+      &::before {
+        border-bottom: 8px solid #FFC813;
+      }
     }
   }
 }
@@ -316,32 +330,36 @@
 @media (max-width: 767px) {
   .chat {
 
-    .my-msg {
-      border-radius: 4px;
+    // .my-msg {
+    //   border-radius: 4px;
   
-      &::before {
-        right: -7px;
+    //   &::before {
+    //     right: -7px;
 
-        left: unset;
+    //     left: unset;
 
-        border-left: 7px solid transparent;
-        border-bottom: 8px solid blue;
-      }
+    //     border-left: 7px solid transparent;
+    //     border-bottom: 8px solid blue;
+    //   }
 
-      &::after {
-        right: 0;
+    //   &::after {
+    //     right: 0;
 
-        left: unset;
-        bottom: -1px;
+    //     left: unset;
+    //     bottom: -1px;
 
-        border-left: 7px solid transparent;
-        border-bottom: 8px solid red;
-      }
-    }
+    //     border-left: 7px solid transparent;
+    //     border-bottom: 8px solid red;
+    //   }
+    // }
 
-    .my-msg {
-      max-width: 100%;
-      // flex-flow: row-reverse;
+    // .my-msg {
+    //   max-width: 100%;
+    //   flex-flow: row-reverse;
+    // }
+
+    &__message-wrap {
+      margin-bottom: 15px;
     }
 
     display: none;
@@ -372,6 +390,12 @@
     &__field {
       background-color: #F6F6F6;
       padding: 20px;
+
+      &::-webkit-scrollbar{
+        width: 0;
+      }
+      scrollbar-width: auto;
+      scrollbar-color: auto;
     }
 
     &__product-name {
@@ -385,6 +409,20 @@
       }
     }
 
+    &__multiple-photo {
+      margin-top: 5px;
+      
+      li {
+        height: 70px;
+        width: 48%;
+      }
+    }
+
+    &__message-body {
+      max-width: 60%;
+      min-width: 205px;
+    }
+
     &__product-name,
     &__user-name{
       border-bottom: 1px solid #E0E0E0;
@@ -394,8 +432,46 @@
       margin-bottom: 0;
       padding: 10px 20px;
     }
-
   }
 
+  .my-msg {
+    flex-flow: row-reverse;
+
+    .chat {
+      &__message-body {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+        margin-right: 8px;
+
+          
+
+        &::before {
+          // border-left: 7px solid transparent;
+          // border-bottom: 8px solid red;
+
+          border-right: 8px solid red;
+          
+
+          position: absolute;
+          bottom: -1px;
+          left: unset;
+          right: -8px;
+        }
+    
+        &::after { content:  none;
+          // border-left: 7px solid transparent;
+          // border-bottom: 8px solid blue;
+          position: absolute;
+          bottom: 0px;
+          left: unset;
+          right: -8px;
+        }
+      }
+
+      &__avatar-smaller {
+        display: none;
+      }
+    }
+  }
 }
 
