@@ -260,7 +260,6 @@
   &__advices {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 5px;
   }
 
   &__advices-text { 
@@ -281,8 +280,18 @@
 
 @media (max-width: 1200px) {
   .chat {
+    height: 670px;
+
     &__product-name {
       font-size: 12px;
+    }
+
+    &__advices {
+      display: none;
+    }
+
+    &__field {
+      max-height: 480px;
     }
 
     &__top-block {
