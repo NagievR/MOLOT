@@ -776,18 +776,18 @@
     margin-right: 8px;
   }
   .my-msg .chat__message-body::before {
-    border-right: 8px solid red;
     position: absolute;
     bottom: -1px;
     left: unset;
     right: -8px;
+    transform: rotate(90deg);
+    border-bottom: 7px solid #FFC813;
   }
   .my-msg .chat__message-body::after {
-    content: none;
-    position: absolute;
-    bottom: 0px;
+    border-bottom: 7px solid white;
+    right: -6px;
     left: unset;
-    right: -8px;
+    transform: rotate(90deg);
   }
   .my-msg .chat__avatar-smaller {
     display: none;
