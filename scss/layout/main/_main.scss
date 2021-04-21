@@ -39,3 +39,12 @@
   }
   
 }
+
+@media (max-width: 1200px) {
+  .main {
+    &__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}

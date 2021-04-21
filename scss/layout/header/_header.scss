@@ -105,3 +105,19 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    &__heading {
+      font-size: 36px;
+    }
+
+    &__body-inner {
+      padding: 0;
+    }
+
+    &__search {
+      margin-bottom: 35px;
+    }
+  }
+}

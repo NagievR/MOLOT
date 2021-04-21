@@ -34,3 +34,16 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .categories {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  
+}

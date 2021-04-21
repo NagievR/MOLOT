@@ -554,6 +554,18 @@ template {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1200px) {
+  .header__heading {
+    font-size: 36px;
+  }
+  .header__body-inner {
+    padding: 0;
+  }
+  .header__search {
+    margin-bottom: 35px;
+  }
+}
+
 .search .select-city-active {
   visibility: visible;
 }
@@ -801,6 +813,13 @@ template {
   margin-right: 0;
 }
 
+@media (max-width: 1200px) {
+  .main__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 .categories__list {
   padding: 0;
   margin: 0;
@@ -835,6 +854,12 @@ template {
   height: 50px;
 }
 
+@media (max-width: 1200px) {
+  .categories__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .product-cards-wrap {
   margin: 0;
   padding: 0;
@@ -860,10 +885,10 @@ template {
   border: 1px solid #E0E0E0;
   border-radius: 10px;
   height: 560px;
-  width: 385px;
   box-sizing: border-box;
   font-size: 14px;
   margin: 0;
+  width: 100%;
 }
 
 .product-card__header {
@@ -872,6 +897,15 @@ template {
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.product-card__header::before {
+  content: url("../assets/icons/seller-location.svg");
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 }
 
 .product-card__logo {
@@ -1146,22 +1180,10 @@ template {
   left: 80%;
 }
 
-.product-card__slider {
-  position: relative;
-}
-
-.product-card__strip {
-  overflow: hidden;
-  display: flex;
-  transition: all 0.37s ease-in-out;
-}
-
-.product-card__gallery {
-  display: flex;
-}
-
-.product-card__gallery li {
-  width: 100%;
+@media (max-width: 1200px) {
+  .product-cards-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .offers__list {
