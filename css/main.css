@@ -54,7 +54,7 @@
   font-size: 16px;
 }
 
-.chat-page__container {
+.chat-page__main-container {
   margin: 0 auto;
   max-width: 1170px;
   padding: 0 20px;
@@ -85,7 +85,7 @@
     margin-right: 0;
     width: 100%;
   }
-  .chat-page__container {
+  .chat-page__main-container {
     padding: 0;
   }
   .chat-page__main {
@@ -286,6 +286,18 @@
   max-width: 295px;
 }
 
+.active-chat .recent__dialog {
+  border-left: 5px solid #FFC813;
+}
+
+.new-message .recent__new-messages-count {
+  display: flex;
+}
+
+.new-message .recent__dialog {
+  background-color: #fff;
+}
+
 @media (max-width: 1200px) {
   .recent__dialog {
     padding: 10px;
@@ -307,18 +319,6 @@
     padding: 0;
     height: 670px;
   }
-}
-
-.active-chat .recent__dialog {
-  border-left: 5px solid #FFC813;
-}
-
-.new-message .recent__new-messages-count {
-  display: flex;
-}
-
-.new-message .recent__dialog {
-  background-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -740,6 +740,7 @@
 
 @media (max-width: 767px) {
   .chat {
+    height: calc(100vh - 50px);
     display: none;
     width: 100%;
     border-radius: 0;
@@ -747,6 +748,12 @@
   }
   .chat__message-wrap {
     margin-bottom: 15px;
+  }
+  .chat__inner {
+    height: calc(100vh - 203px);
+  }
+  .chat__textarea-wrap img {
+    height: 18px;
   }
   .chat__top-block {
     border-radius: 0;
@@ -761,12 +768,26 @@
   .chat__col:nth-child(2) {
     display: none;
   }
-  .chat__product-photo {
-    display: none;
+  .chat__textarea-wrap {
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    min-height: 40px;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .chat__textarea {
+    border: none;
+    padding: 0;
+    height: 40px;
+    margin-top: 0;
+    padding: 10px;
   }
   .chat__field {
     background-color: #F6F6F6;
     padding: 20px;
+    max-height: unset;
+    height: 100%;
     scrollbar-width: auto;
     scrollbar-color: auto;
   }
@@ -792,6 +813,11 @@
   .chat__message-body {
     max-width: 60%;
     min-width: 205px;
+  }
+  .chat__product-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .chat__product-name, .chat__user-name {
     border-bottom: 1px solid #E0E0E0;

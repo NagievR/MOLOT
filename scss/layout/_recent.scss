@@ -114,6 +114,27 @@
   }
 }
 
+.active-chat {
+  .recent {
+    &__dialog {
+      border-left: 5px solid #FFC813;
+    }
+  }
+}
+
+.new-message {
+  // background-color: #fff;
+  
+  .recent {
+    &__new-messages-count {
+      display: flex;
+    }
+
+    &__dialog {
+      background-color: #fff;
+    }
+  }
+}
 
 @media (max-width: 1200px) {
   .recent {
@@ -145,30 +166,10 @@
  
 }
 
-.active-chat {
-  .recent {
-    &__dialog {
-      border-left: 5px solid #FFC813;
-    }
-  }
-}
-
-.new-message {
-  // background-color: #fff;
-  
-  .recent {
-    &__new-messages-count {
-      display: flex;
-    }
-
-    &__dialog {
-      background-color: #fff;
-    }
-  }
-}
 
 
 @media (max-width: 767px) {
+
   .recent {
     width: 100%;
 
@@ -181,7 +182,6 @@
     }
 
     &__dialog {
-      
       margin-right: 0;
       border-radius: 0;
       border: none;
@@ -203,6 +203,8 @@
       white-space: normal;
       // max-width: 85%;
     }
+
+
 
     &__new-messages-count {
       right: 20px;
