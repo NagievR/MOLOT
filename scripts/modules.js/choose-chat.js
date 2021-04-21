@@ -13,7 +13,7 @@ const checkboxAction = {
   hide: 'hide'
 };
 
-export const chooseChats = () => {
+export const chooseChat = () => {
   options.style.display = 'none';
 
   chooseBtn.addEventListener('click', () => {

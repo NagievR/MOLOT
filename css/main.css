@@ -320,6 +320,8 @@
     scrollbar-width: auto;
     scrollbar-color: auto;
     height: calc(92vh - 25px - 40px - 16px - 35px - 50px);
+    max-height: unset;
+    min-height: unset;
   }
   .recent__dialog-list::-webkit-scrollbar {
     width: 0;
