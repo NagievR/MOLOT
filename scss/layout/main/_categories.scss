@@ -22,7 +22,7 @@
 
   &__description {
     font-size: 14px;
-    max-width: 105px;
+    width: 60%;
     line-height: 20px;
   }
 
@@ -33,6 +33,11 @@
       height: 50px;
     }
   }
+
+  &__show-all-btn {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -45,5 +50,21 @@
 }
 
 @media (max-width: 767px) {
+  .categories {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      max-height: 440px;
+      overflow: hidden;
+    }
+
+    &__show-all-btn {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
   
 }

@@ -48,3 +48,23 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .main {
+    &__promo-item {
+      width: 260px;
+      height: 180px;
+    }
+
+    &__container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__heading {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+  }
+}

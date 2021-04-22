@@ -15,7 +15,7 @@
       <div class="container">
         <div class="header__head-inner">
           <div class="header-col">
-            <img src="./assets/images/logo.svg" alt="логотип">
+            <img class="header__logo" src="./assets/images/logo.svg" alt="логотип">
           </div>
           <div class="header-col">
             <div class="header__options">
@@ -35,6 +35,7 @@
                 Разместить товаp
               </button>
             </div>
+            <div class="header__burger"><span></span></div>
           </div>
         </div> <!-- /header__head-inner -->
       </div> <!-- /container -->
@@ -53,7 +54,9 @@
               <input class="search__input" type="text" placeholder="Поиск" />
               <div class="search__right-block">
                 <div class="search__dropdown">
-                  <div class="search__selected">Вся Украина</div>
+                  <div class="search__selected">
+                    <div class="search__selected-text">Вся Украина</div>
+                  </div>
                   <div class="search__dropping-block-container">
                     <ul class="search__dropping-block">
                       <li>Вся Украина</li>
@@ -72,7 +75,9 @@
                     </ul>
                   </div> 
                 </div>
-                <button class='search__find'>Найти</button>
+                <button class='search__find'>
+                  <div class="search__find-text">Найти</div>
+                </button>
               </div>
             </div>
           </div>
@@ -211,13 +216,20 @@
             </div>
           </li>
         </ul> 
+
+        <button class="categories__show-all-btn btn-no-style">
+          смотреть все
+        </button>
       </div> <!-- /categories -->
     </div> <!-- /container -->
 
     <div class="main__block-bg-gray">
-      <div class="container main__container">
-        <div class="top-sales">
-          <h2 class="main__heading">Топ продаж</h2>
+      <div class="main__container">
+        
+        <div class="container">
+          <div class="top-sales">
+            <h2 class="main__heading">Топ продаж</h2>
+          </div>
         </div>
         
         <ul class="product-cards-wrap">
