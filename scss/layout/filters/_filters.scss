@@ -1,0 +1,27 @@
+.filters {
+  display: flex;
+  width: 160px;
+  border-radius: 10px;
+  background-color: #fff;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #E0E0E0;
+
+  &__count {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC813;
+    margin-right: 10px;
+  }
+
+  &::after {
+    content: '';
+    // background-image: ;
+
+  }
+}
