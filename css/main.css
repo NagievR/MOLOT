@@ -545,7 +545,7 @@ template {
 }
 
 .header__body-inner {
-  padding: 100px 0 60px 0;
+  margin: 50px 0 60px 0;
 }
 
 .header__heading {
@@ -595,7 +595,7 @@ template {
     font-size: 36px;
   }
   .header__body-inner {
-    padding: 0;
+    margin: 20px 0 0 0;
   }
   .header__search {
     margin-bottom: 35px;
@@ -605,6 +605,9 @@ template {
 @media (max-width: 767px) {
   .header__head-inner {
     padding: 7px 0;
+  }
+  .header__body-inner {
+    margin-top: 10px;
   }
   .header__heading {
     margin-bottom: 14px;
@@ -619,9 +622,6 @@ template {
   }
   .header__burger {
     display: block;
-  }
-  .header__search {
-    margin-bottom: 20px;
   }
 }
 
