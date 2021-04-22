@@ -8,6 +8,7 @@ export const expandTextarea = () => {
 
   const resize = () => {
     const scrollHeight = textarea.scrollHeight;
+    console.log(scrollHeight)
     textarea.style.height = scrollHeight + bordersHorizontal + 'px';
   
     if (!textarea.value) {
