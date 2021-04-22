@@ -690,13 +690,12 @@ template {
 }
 
 .search__dropping-block-container {
-  position: relative;
+  position: absolute;
   z-index: 10;
   width: 268px;
   background-color: #fff;
-  display: none;
+  top: 60px;
   box-shadow: 0 3px 15px -4px rgba(68, 68, 68, 0.4);
-  margin-top: 10px;
   border-radius: 4px;
 }
 
@@ -780,6 +779,10 @@ template {
   .search__find::after {
     top: 50%;
     right: 50%;
+  }
+  .search__dropping-block-container {
+    top: 40px;
+    right: -45px;
   }
   .search__dropdown, .search__selected, .search__find {
     width: 46px;
@@ -868,7 +871,7 @@ template {
   background-color: #f5f5f5;
 }
 
-.main__container {
+.main__vertical-padding-container {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -902,7 +905,7 @@ template {
 }
 
 @media (max-width: 1200px) {
-  .main__container {
+  .main__vertical-padding-container {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -913,7 +916,7 @@ template {
     width: 260px;
     height: 180px;
   }
-  .main__container {
+  .main__vertical-padding-container {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -984,7 +987,8 @@ template {
 }
 
 .product-cards-wrap {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1170px;
   padding: 0 20px;
   list-style-type: none;
   display: grid;
@@ -1354,6 +1358,14 @@ template {
   margin-right: 0;
 }
 
+@media (max-width: 767px) {
+  .offers__item {
+    margin-right: 5px;
+    height: 190px;
+    width: 136px;
+  }
+}
+
 .mobile-app__inner {
   margin: 0 auto;
   max-width: 1170px;
@@ -1590,6 +1602,13 @@ template {
   border-radius: 8px;
 }
 
+@media (max-width: 767px) {
+  .advantages__item {
+    width: 260px;
+    height: 180px;
+  }
+}
+
 .top-companies__company-list {
   margin: 0;
   padding: 0 0 50px 0;
@@ -1597,7 +1616,7 @@ template {
   display: inline-flex;
 }
 
-.top-companies__company {
+.top-companies__company-item {
   width: 205px;
   height: 80px;
   box-sizing: border-box;
@@ -1624,6 +1643,33 @@ template {
 .top-companies__name {
   font-size: 18px;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .top-companies__company-item {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-right: 0;
+  }
+  .top-companies__name {
+    font-size: 12px;
+  }
+  .top-companies__logo-wrap {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+  }
+  .top-companies__logo-wrap img {
+    width: 100%;
+  }
+  .top-companies__company-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    padding-right: 20px;
+    grid-gap: 10px;
+  }
 }
 
 .footer {

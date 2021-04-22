@@ -23,3 +23,13 @@
   }
 
 }
+
+@media (max-width: 767px) {
+  .offers {
+    &__item {
+      margin-right: 5px;
+      height: 190px;
+      width: 136px;
+    }
+  }
+}

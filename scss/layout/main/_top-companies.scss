@@ -6,7 +6,7 @@
     display: inline-flex;
   }
 
-  &__company {
+  &__company-item {
     width: 205px;
     height: 80px;
     box-sizing: border-box;
@@ -33,5 +33,41 @@
   &__name {
     font-size: 18px;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-companies {
+
+    &__company-item {
+      width: 100%;
+      height: 45px;
+      padding: 10px;
+      margin-right: 0;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+
+    &__logo-wrap {
+      object-fit: cover;
+      width: 35px;
+      height: 35px;
+  
+      img {
+        width: 100%;
+      }
+    }
+
+    &__company-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 0;
+      padding-right: 20px;
+      grid-gap: 10px;
+    }
+
+
   }
 }

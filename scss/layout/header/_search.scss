@@ -67,14 +67,12 @@
   }
 
   &__dropping-block-container {
-    position: relative;
+    position: absolute;
     z-index: 10;
     width: 268px;
     background-color: #fff;
-    // visibility: hidden;
-    display: none;
+    top: 60px;
     box-shadow: 0 3px 15px -4px rgba(68, 68, 68, 0.4);
-    margin-top: 10px;
     border-radius: 4px;
   }
 
@@ -95,7 +93,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
     width: 98.8%;
     max-height: 290px;
     overflow-y: auto;
@@ -163,8 +160,12 @@
   .search {
     &__find::after{
       top: 50%;
-      right: 50%;
-      // transform: translate(50%, -50%);    
+      right: 50%;  
+    }
+
+    &__dropping-block-container {
+      top: 40px;
+      right: -45px;
     }
 
     &__dropdown,

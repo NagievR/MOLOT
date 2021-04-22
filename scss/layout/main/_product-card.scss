@@ -1,6 +1,8 @@
 .product-cards-wrap {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1170px;
   padding: 0 20px;
+  
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
