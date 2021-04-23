@@ -1,4 +1,5 @@
-.container {
+.container,
+.full-width-mobile-container {
   margin: 0 auto;
   max-width: 1170px;
   padding-left: 20px;
@@ -14,4 +15,14 @@
   .js-move-container {
     padding-left: 20px;
   }
+
 }
+
+@media (max-width: 767px) {
+  .full-width-mobile-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+}
+
