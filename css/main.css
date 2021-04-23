@@ -436,78 +436,19 @@ template {
   display: none;
 }
 
-.categories {
+.card-container {
   background-color: #F6F6F6;
   padding-top: 50px;
   margin-bottom: 100px;
 }
 
-.categories__category-list {
-  margin-bottom: 30px;
-}
-
-.categories__id {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.categories__options {
-  display: flex;
-}
-
-.categories__search {
-  margin-right: 30px;
-  width: calc(100% - 160px - 30px);
-  max-width: 979px;
-}
-
-.categories__ads-number-wrap {
-  margin-bottom: 20px;
-}
-
-.categories__card-list {
+.card-container__card-list {
   margin: 0 0 50px 0;
   padding: 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-}
-
-.categories__card-list-item {
-  background-color: royalblue;
-}
-
-.categories__bottom-block {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.categories__show-more-btn {
-  border: 2px solid #FFC813;
-  background-color: #fff;
-  color: #333333;
-  text-transform: uppercase;
-  height: 50px;
-  padding: 18px 48px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  outline: none;
-}
-
-@media (max-width: 1200px) {
-  .categories__page-counter-wrap {
-    width: 100%;
-    position: static;
-    transform: translateY(0);
-  }
-  .categories__show-more-btn {
-    margin-bottom: 35px;
-  }
 }
 
 .search .select-city-active {
@@ -738,6 +679,11 @@ template {
   background-repeat: no-repeat;
   margin-left: 22px;
   background-size: 9px 11px;
+}
+
+.filters__dropdown {
+  width: 320px;
+  background-color: #fff;
 }
 
 .active-page {
@@ -1131,5 +1077,69 @@ template {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.card__gallery li {
+  width: 383px;
+}
+
+.categories-page {
+  background-color: #F6F6F6;
+  padding: 20px 0 100px 0;
+}
+
+.categories-page__id {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.categories-page__category-list {
+  margin-bottom: 30px;
+}
+
+.categories-page__search {
+  margin-right: 30px;
+  width: calc(100% - 160px - 30px);
+  max-width: 979px;
+}
+
+.categories-page__options {
+  display: flex;
+}
+
+.categories-page__ads-number-wrap {
+  margin-bottom: 20px;
+}
+
+.categories-page__show-more-btn {
+  border: 2px solid #FFC813;
+  background-color: #fff;
+  color: #333333;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 18px 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.categories-page__bottom-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .categories-page__page-counter-wrap {
+    width: 100%;
+    position: static;
+    transform: translateY(0);
+  }
+  .categories-page__show-more-btn {
+    margin-bottom: 35px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

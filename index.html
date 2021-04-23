@@ -9,13 +9,12 @@
   <link href="./css/main.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- <header>HEADER</header> -->
 
-  <main class="categories">
+  <main class="categories-page">
 
-    <div class="category-list categories__category-list">
+    <div class="category-list categories-page__category-list">
       <div class="container">
-        <h2 class="categories__heading heading">Категории товаров</h2>
+        <h2 class="categories-page__heading heading">Категории товаров</h2>
       </div>
       <div class="js-move-container">
         <ul class="category-list__list">
@@ -114,13 +113,14 @@
     </div> <!-- /category-list -->
 
     <!-- RENAME IT -->
-    <div class="categories__id">
+    <div class="categories-page__id">
       <div class="container">
- 
+
         <!-- rename too -->
-        <div class="categories__options">
-          <div class="search categories__search">
+        <div class="categories-page__options">
+          <div class="search categories-page__search">
             <div class="search__form">
+              
               <input class="search__input" type="text" placeholder="Поиск" />
               <div class="search__right-block">
                 <div class="search__dropdown">
@@ -149,26 +149,36 @@
                   <div class="search__find-text">Найти</div>
                 </div>
               </div> <!-- /search__right-block -->
+
             </div> <!-- /search__form -->
           </div> <!-- /search -->
-  
+
+
+
           <div class="filters">
             <div class="filters__count">2</div>
-            <div class='name'>Фильтры</div>
-          </div>
-        </div> <!-- /categories__options -->
-      </div> <!-- /container -->
-    </div> <!-- /categories__id -->
+            <div class='filters__name'>Фильтры</div>
 
-    <div class="categories">
+            <div class="filters__dropdown">
+              
+            </div>
+          </div>
+
+
+
+        </div> <!-- /categories-page__options -->
+      </div> <!-- /container -->
+    </div> <!-- /categories-page__id -->
+
+    <div class="card-container">
       <div class="container">
-        <div class="categories__ads-number-wrap">
-          Найдено <span class="categories__ads-count">228</span> объявлений
+        <div class="categories-page__ads-number-wrap">
+          Найдено <span class="categories-page__ads-count">228</span> объявлений
         </div>
       </div> <!-- /container -->
 
       <div class="full-width-mobile-container">
-        <ul class="categories__card-list">
+        <ul class="card-container__card-list">
 
           <li class="card">
             <div class="card__wrap">
@@ -666,7 +676,6 @@
             </div> <!-- /card__wrap -->  
           </li>
 
-
           <li class="card">
             <div class="card__wrap">
               <div class="card__header">
@@ -812,7 +821,6 @@
               </div> <!-- /card__body -->
             </div> <!-- /card__wrap -->  
           </li> 
-
 
           <li class="card">
             <div class="card__wrap">
@@ -961,7 +969,6 @@
             </div> <!-- /card__wrap -->  
           </li> 
 
-
           <li class="card">
             <div class="card__wrap">
               <div class="card__header">
@@ -1109,17 +1116,14 @@
               </div> <!-- /card__body -->
             </div> <!-- /card__wrap -->  
           </li> 
-
-
-
           
-        </ul>
-      </div> 
-    </div> <!-- /categories -->
+        </ul> <!-- /card-container__card-list -->
+      </div> <!-- /full-width-mobile-container -->
+    </div> <!-- /card-container -->
 
     <div class="container">
-      <div class="categories__bottom-block">
-        <button class="categories__show-more-btn">
+      <div class="categories-page__bottom-block">
+        <button class="categories-page__show-more-btn">
           смотреть еще
         </button>
         <div class="page-counter">
@@ -1138,7 +1142,6 @@
   
   </main>
 
-  <!-- <footer>FOOTER</footer> -->
 </body>
 </html>
 

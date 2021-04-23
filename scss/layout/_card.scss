@@ -40,13 +40,10 @@
     color: #828282;
   }
 
-
   &__photo-wrap {
     position: relative;
     overflow: hidden;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
     height: 400px;
   }
 
@@ -94,7 +91,6 @@
   &__characteristics {
     padding: 12px;
   }
-  
 
   &__slide-markers {
     margin: 0;
@@ -201,10 +197,6 @@
   &__more-info {
     color: #BDBDBD;
     cursor: pointer;
-
-    // &::before {
-    //   content: '...';
-    // }
   }
 
   &__characteristic {
@@ -350,7 +342,7 @@
     list-style: none;
     
     li {
-      // width: 383px;
+      width: 383px;
     }
   }
 }
