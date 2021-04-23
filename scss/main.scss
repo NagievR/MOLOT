@@ -5,10 +5,11 @@
 @import "./vendors/normalize";
 
 // main
-@import "./layout/main/main";
+@import "./layout/main/categories";
 @import "./layout/main/search";
 @import "./layout/main/filter-dropdown";
 @import "./layout/filters/filters";
+@import "./layout/main/page-counter";
 
 
 
