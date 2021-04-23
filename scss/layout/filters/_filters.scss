@@ -8,6 +8,7 @@
   padding: 13px 15px;
   border: 1px solid #E0E0E0;
   cursor: pointer;
+  position: relative;
 
   &__count {
     height: 23px;
@@ -32,9 +33,32 @@
   }
 
   &__dropdown {
+    position: absolute;
     width: 320px;
     background-color: #fff;
+    right: 0;
+    z-index: 5;
+    border: 1px dotted red;
+    top: 60px;
+    border-radius: 10px;
   }
   
+  &__inner {
+    margin: 0;
+    list-style-type: none;
+    padding: 17px 20px;
+  }
+
+  &__found-amount {
+    position: relative;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+
+ 
+
 }
 

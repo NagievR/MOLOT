@@ -657,6 +657,7 @@ template {
   padding: 13px 15px;
   border: 1px solid #E0E0E0;
   cursor: pointer;
+  position: relative;
 }
 
 .filters__count {
@@ -682,8 +683,28 @@ template {
 }
 
 .filters__dropdown {
+  position: absolute;
   width: 320px;
   background-color: #fff;
+  right: 0;
+  z-index: 5;
+  border: 1px dotted red;
+  top: 60px;
+  border-radius: 10px;
+}
+
+.filters__inner {
+  margin: 0;
+  list-style-type: none;
+  padding: 17px 20px;
+}
+
+.filters__found-amount {
+  position: relative;
+}
+
+.filters__item {
+  margin-bottom: 40px;
 }
 
 .active-page {
