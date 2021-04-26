@@ -127,7 +127,7 @@
     }
   }
 
-  &__chosen-filters-wrap {
+  &__chosen-filters {
     color: #BDBDBD;
   }
 
@@ -146,12 +146,6 @@
     display: flex;
     cursor: pointer;
     justify-content: space-between;
-
-    // &:hover {
-    //   path {
-    //     stroke: red;
-    //   }
-    // }
   }
 
   &__left-col {
@@ -288,7 +282,6 @@
     background-color: #FFC813;
     padding: 11px;
   }
-
 }
 
 .hide {
