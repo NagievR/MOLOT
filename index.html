@@ -120,7 +120,7 @@
         <div class="categories-page__options">
           <div class="search categories-page__search">
             <div class="search__form">
-              
+
               <input class="search__input" type="text" placeholder="Поиск" />
               <div class="search__right-block">
                 <div class="search__dropdown">
@@ -153,66 +153,208 @@
             </div> <!-- /search__form -->
           </div> <!-- /search -->
 
-
           <div class="filters">
             <div class="filters__count">2</div>
             <div class='filters__name'>Фильтры</div>
 
             <div class="filters__dropdown">
-              <ul class="filters__inner">
+              <div class="filters__dropdown-inner">
 
-                <li class="filters__item">
-                  <div class="filters__found-amount">
+                <div class="filters__top-block">
+                  <div class="filters__found-quantity">
                     Всего <span class="filters__quantity">28</span> товаров
                   </div>
-                </li>
-
-                <li class="filters__item">
-                  <ul class="filters__tags">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </li>
-
-                <li class="filters__item">
-                  <div class="filters__price-slider">
-                    Всего <span class="filters__quantity">28</span> товаров
+                  <div class="filters__visible-section">
+                    <div class="filters__visible-section-col">Все</div>
+                    <div class="filters__visible-section-col">
+                      Выбранные&nbsp;
+                      <span class="filters__chosen-filters-wrap">
+                        (<span class="filters__choosen-filters-quantity">1</span>)
+                      </span>
+                    </div>
                   </div>
-                </li>
+                  <div class="filters__indicator-line"></div>
+                </div>
 
-                <li class="filters__item">
-                  <div class="filters__color">
-                    Всего <span class="filters__quantity">28</span> товаров
-                  </div>
-                </li>
+                <ul class="filters__list">
+                  <li class="filters__item">
 
-                <li class="filters__item">
-                  <div class="filters__brand">
-                    Всего <span class="filters__quantity">28</span> товаров
-                  </div>
-                </li>
+                    <ul class="filters__tag-list">
+                      <li class="filters__tag-item">
+                        <div class="seller-delivery">
+                          Доставка от продавца
+                        </div>
+                      </li>
+                      <li class="filters__tag-item">
+                        <div class="promotions active-tag">
+                          Акции
+                        </div>
+                      </li>
+                      <li class="filters__tag-item">
+                        <div class="new-product">
+                          Новинки
+                        </div>
+                      </li>
+                      <li class="filters__tag-item">
+                        <div class="in-stock">
+                          В наличии
+                        </div>
+                      </li>
+                      <li class="filters__tag-item">
+                        <div class="top">
+                          Топ
+                        </div>
+                      </li>
+                    </ul> <!-- /filters__tag-list -->
+                  </li>
 
-                <li class="filters__item">
-                  <div class="filters__volume">
-                    Всего <span class="filters__quantity">28</span> товаров
-                  </div>
-                </li>
+                  <li class="filters__item">
+                    <div class="filters__price">
 
-                <li class="filters__item">
-                  <div class="filters__products-amount">
-                    Всего <span class="filters__quantity">28</span> товаров
-                  </div>
-                </li>
+                      <div class='filters__hiding'>
+                        <div class='filters__heading'>Цена
+                          <div class='filters__heading-icon'>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 6.5L6 1.5L1 6.5" stroke="#F2994A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                          </div>
+                        </div>
+                        <div class="filters__hiding-block">
+                          <div class="filters__range-inputs">
+                            <input class='filters__input' placeholder="0" type="number">
+                            <input class='filters__input' placeholder="999 000" type="number">
+                            <button class="filters__apply-single-btn filters__btn-style-reset">ок</button>
+                          </div>
+                          range slider
+                        </div>
+                      </div> <!-- /filters__hiding -->
 
-              </ul>
+                    </div>
+                  </li>
+
+                  <li class="filters__item filters__price">
+                    <div class='filters__hiding '>
+                      <div class='filters__heading'>
+                        <div class="filters__left-col">
+                          Цвет&nbsp;
+                          <div class='filters__heading-quantity'>28</div>
+                        </div>
+                        <div class='filters__heading-icon'>
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6.5L6 1.5L1 6.5" stroke="#F2994A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg> 
+                        </div>
+                      </div> <!-- /filters__heading -->
+                      
+                      <div class="filters__hiding-block">
+                        <div class="filters__inputs">
+                          <label class="filters__checkbox">
+                            <input type="checkbox" checked value="value">
+                            <span class="filters__hiding-name">Красный&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox" checked value="value">
+                            <span class="filters__hiding-name">Серый&nbsp;</span>
+                            <span class="filters__inputs-quantity">(8)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Красный&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Белый&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox" checked value="value">
+                            <span class="filters__hiding-name">Черный&nbsp;</span>
+                            <span class="filters__inputs-quantity">(2)</span>
+                          </label>
+                        </div> <!-- /filters__inputs -->
+                        <button class="filters__more-btn filters__btn-style-reset">Показать еще</button>
+                      </div> <!-- /filters__hiding-block -->
+                    </div> <!-- /filters__hiding -->
+                  </li>
+
+                  <li class="filters__item filters__brand">
+                    <div class='filters__hiding '>
+                      <div class='filters__heading'>
+                        <div class="filters__left-col">
+                          Бренд&nbsp;
+                          <div class='filters__heading-quantity'>82</div>
+                        </div>
+                        <div class='filters__heading-icon'>
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6.5L6 1.5L1 6.5" stroke="#F2994A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg> 
+                        </div>
+                      </div> <!-- /filters__heading -->
+                      
+                      <div class="filters__hiding-block">
+                        <input class='filters__search' type="text" />
+                        <div class="filters__inputs">
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Бренд 1&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox" checked value="value">
+                            <span class="filters__hiding-name">Бренд 2&nbsp;</span>
+                            <span class="filters__inputs-quantity">(8)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Бренд 3&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Бренд 4&nbsp;</span>
+                            <span class="filters__inputs-quantity">(28)</span>
+                          </label>
+                          <label class="filters__checkbox">
+                            <input type="checkbox"  value="value">
+                            <span class="filters__hiding-name">Бренд 5&nbsp;</span>
+                            <span class="filters__inputs-quantity">(2)</span>
+                          </label>
+                        </div> <!-- /filters__inputs -->
+                        <button class="filters__more-btn filters__btn-style-reset">Показать еще</button>
+                      </div> <!-- /filters__hiding-block -->
+                    </div> <!-- /filters__hiding -->
+                  </li>
+
+                  <li class="filters__item filters__brand">
+                    <div class='filters__hiding '>
+                      <div class='filters__heading'>
+                        <div class="filters__left-col">
+                          Объем, мл&nbsp;
+                          <div class='filters__heading-quantity'>82</div>
+                        </div>
+                        <div class='filters__heading-icon'>
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6.5L6 1.5L1 6.5" stroke="#F2994A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg> 
+                        </div>
+                      </div> <!-- /filters__heading -->
+                      
+                      <div class="filters__hiding-block">
+                        <div class="filters__range-inputs">
+                          <input class='filters__input' placeholder="0" type="number">
+                          <input class='filters__input' placeholder="999 000" type="number">
+                          <button class="filters__apply-single-btn filters__btn-style-reset">ок</button>
+                        </div>
+                      </div> <!-- /filters__hiding-block -->
+                    </div> <!-- /filters__hiding -->
+                  </li>
+                </ul>
+                <button class='filters__apply-all-btn filters__btn-style-reset'>Применить</button>
+              </div>
             </div>
           </div>
-
-
-
         </div> <!-- /categories-page__options -->
       </div> <!-- /container -->
     </div> <!-- /categories-page__id -->
