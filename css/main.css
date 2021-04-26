@@ -663,6 +663,7 @@ template {
 }
 
 .filters__dropdown {
+  display: none;
   position: absolute;
   width: 320px;
   background-color: #fff;
@@ -670,7 +671,7 @@ template {
   z-index: 5;
   top: 60px;
   border-radius: 10px;
-  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filters__dropdown-inner {
@@ -988,7 +989,6 @@ template {
 
 .card {
   box-sizing: border-box;
-  max-width: 383px;
   height: 700px;
   width: 100%;
 }
@@ -1272,10 +1272,6 @@ template {
   height: 20px;
 }
 
-.card__score-wrap_show {
-  width: 140px;
-}
-
 .card__score-wrap_show li:nth-child(1) {
   left: 0;
 }
@@ -1312,10 +1308,6 @@ template {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.card__gallery li {
-  width: 383px;
 }
 
 .categories-page {

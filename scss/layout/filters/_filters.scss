@@ -32,6 +32,7 @@
   }
 
   &__dropdown {
+    display: none;
     position: absolute;
     width: 320px;
     background-color: #fff;
@@ -39,7 +40,8 @@
     z-index: 5;
     top: 60px;
     border-radius: 10px;
-    box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.1);
+
   }
 
   &__dropdown-inner {
