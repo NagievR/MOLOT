@@ -7,15 +7,24 @@
     padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(3, 33.33%); 
+    grid-template-columns: repeat(3, calc(33.33% - 7px)); 
     grid-gap: 10px;  
   }
 }
 
 @media (max-width: 1200px) {
-  // .card-container {
-    // &__card-list {
-    //   grid-template-columns: repeat(3, 33.33%); 
-    // }
-  // }
+  .card-container {
+    &__card-list {
+      grid-template-columns: repeat(2, calc(50% - 5px));
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    &__card-list {
+      grid-template-columns: repeat(1, 100%); 
+      grid-gap: 30px;
+    }
+  }
 }

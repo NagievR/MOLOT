@@ -446,8 +446,21 @@ template {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 33.33%);
+  grid-template-columns: repeat(3, calc(33.33% - 7px));
   grid-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .card-container__card-list {
+    grid-template-columns: repeat(2, calc(50% - 5px));
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container__card-list {
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 30px;
+  }
 }
 
 .search .select-city-active {
@@ -883,6 +896,7 @@ template {
 
 .filters__input::-webkit-inner-spin-button, .filters__input::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 .filters__input {
@@ -1294,6 +1308,7 @@ template {
 
 .card__slider {
   position: relative;
+  width: 100%;
 }
 
 .card__strip {
@@ -1306,8 +1321,31 @@ template {
 .card__gallery {
   display: flex;
   margin: 0;
+  width: 100%;
   padding: 0;
   list-style: none;
+}
+
+.card__gallery li {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .card__wrap {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .card__header {
+    padding: 7px 20px;
+  }
+  .card__content {
+    padding: 0 20px;
+  }
+  .card__product-name {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
 }
 
 .categories-page {
@@ -1335,6 +1373,7 @@ template {
 }
 
 .categories-page__ads-number-wrap {
+  font-weight: 450;
   margin-bottom: 20px;
 }
 
