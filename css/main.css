@@ -1,6 +1,7 @@
 body {
   font-family: 'HelveticaNeueCyr', serif;
   font-weight: 400;
+  background-color: #F6F6F6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -340,5 +341,66 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.main__container {
+  margin: 50px auto 100px auto;
+  display: flex;
+  max-width: 1170px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main__product {
+  width: 755px;
+  margin-right: 30px;
+}
+
+.main__large-card {
+  margin-right: 30px;
+  margin-bottom: 50px;
+  height: 1381px;
+}
+
+.main__seller {
+  width: 755px;
+  height: 270px;
+  background-color: #8bc36f;
+  border-radius: 10px;
+}
+
+.main__strip {
+  width: 385px;
+  height: 2900px;
+  max-height: 1701px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+
+.large-card {
+  height: 1381px;
+  width: 755px;
+  border-radius: 10px;
+  background-color: cadetblue;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.js-move-container {
+  padding-left: calc((100vw - 1185px) / 2);
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .js-move-container {
+    padding-left: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
