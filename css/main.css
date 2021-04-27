@@ -353,6 +353,7 @@ template {
 
 .js-move-container {
   padding-left: calc((100vw - 1185px) / 2);
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -737,13 +738,14 @@ template {
   box-sizing: border-box;
   height: 100%;
   width: 147px;
-  border: none;
   padding-right: 70px;
   text-transform: uppercase;
   font-size: 14px;
   padding: 0 69px 0 30px;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
+  display: flex;
+  align-items: center;
   position: relative;
   cursor: pointer;
 }
@@ -1120,6 +1122,7 @@ template {
   text-align: center;
   font-size: 14px;
   font-weight: 550;
+  margin-bottom: 15px;
 }
 
 .product-card__content {
