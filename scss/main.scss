@@ -1,16 +1,19 @@
-@import "./layout/category-list";
-@import "./layout/containers";
-@import "./layout/heading";
-
+@import "./layout/tags";
 @import "./base/font";
 @import "./vendors/normalize";
 
+
 // main
 @import "./layout/main/card-container";
-@import "./layout/main/search";
 @import "./layout/filters/filters";
 @import "./layout/main/page-counter";
-@import "./layout/card";
 @import "./layout/main/categories-page";
 
-@import "./layout/tags";
+// reused
+@import "./layout/main/search";
+@import "./layout/card";
+@import "./layout/bottom-block";
+@import "./layout/avatars";
+@import "./layout/containers";
+@import "./layout/heading";
+@import "./layout/category-list";

@@ -5,6 +5,7 @@
   &__options-wrap {
     padding-bottom: 50px;
     border-bottom: 1px solid #E0E0E0;
+    z-index: 2;
   }
   
   &__category-list {
@@ -19,6 +20,7 @@
 
   &__options {
     display: flex;
+    align-items: center;
   }
 
   &__ads-number-wrap {
@@ -46,6 +48,24 @@
     flex-wrap: wrap;
     position: relative;
   }
+
+  &__all-ads {
+    cursor: pointer;
+    font-size: 12px;
+    display: none;
+    padding: 10px 0;
+
+    &::after {
+      content: '';
+      background-image: url('../assets/icons/arrow.svg');
+      height: 12px;
+      width: 12px;
+      transform: rotate(-90deg);
+      background-repeat: no-repeat;
+      margin-left: 22px;
+      background-size: 9px 11px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -58,6 +78,48 @@
     
     &__show-more-btn {
       margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .categories-page {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    &__category-list,
+    &__bottom-block-container {
+      display: none;
+    }
+
+    &__options-wrap {
+      background-color: #fff;
+      border-bottom: none;
+      padding-bottom: 0;
+      position: fixed;
+      background-color: #fff;
+      z-index: 3;
+      width: 100%;
+      top: 0;
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.08);
+    }
+
+    &__options {
+      height: 40px;
+      justify-content: space-between;
+    }
+
+    &__all-ads {
+      display: flex;
+
+      &::after {
+        margin-left: 8px;
+        background-size: 10px 11px;
+      }
+    }
+
+    &__ads-number-wrap {
+      margin-bottom: 15px;
     }
   }
 }

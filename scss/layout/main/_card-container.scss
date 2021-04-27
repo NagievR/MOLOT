@@ -22,6 +22,8 @@
 
 @media (max-width: 767px) {
   .card-container {
+    margin-top: 30px;
+
     &__card-list {
       grid-template-columns: repeat(1, 100%); 
       grid-gap: 30px;
