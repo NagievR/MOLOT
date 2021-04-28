@@ -1,7 +1,404 @@
+
+
+
 .large-card {
-  height: 1381px;
+  .active-marker {
+    background-color: #4F4F4F;
+  }
+  
   width: 100%;
   border-radius: 10px;
   background-color: #fff;
+
+  &__photo-wrap {
+    height: 750px;
+  }
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__head {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__to-next,
+  &__to-prev {
+    position: absolute;
+    top: calc(50% - 12px);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.1);  
+    }
+  }
+
+  &__to-next {
+    left: 20px;
+  }
+
+  &__charac-btn {
+    background-color: rgba(239, 239, 239, 0.5);
+    position: absolute;
+    cursor: pointer;
+    width: 184px;
+    height: 40px;
+    bottom: 0;
+    left: 50%;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-50%);
+    padding: 10px 22px;
+  }
+
+  &__charac-btn-inner {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('../icons/open-arrow.svg');
+      height: 21px;
+      width: 21px;
+      background-size: cover;
+      position: absolute;
+      right: -7px;
+      bottom: -3px;
+    }
+  }
+
+  &__to-prev {
+    right: 20px;
+  }
+
+
+  &__slide-markers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #BDBDBD;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__space-btw-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__price-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__old-price,
+  &__current-price {
+    &::after {
+      content: ' грн';
+    }
+  }
+
+  &__current-price {
+    font-size: 30px;
+    font-weight: 500;
+    color: #01662C;
+  }
+
+  &__old-price {
+    text-decoration: line-through;  
+    color: #828282;
+    margin-left: 5px;
+  }
+
+  &__container {
+    padding: 0 20px;
+  }
+
+  &__rating {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-right: 15px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__option-list {
+    margin: 0 0 35px 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    li {
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__optin-icon {
+    margin-right: 10px;
+  }
+
+  &__rename-these-btns {
+    background-color: indianred;
+    height: 50px;
+    margin-bottom: 35px;
+  }
+
+  &__product-name {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+
+    &::before {
+      content: 'Описание ';
+      font-weight: 500;
+    }
+  }
+
+  &__tags-list {
+    margin: 0 0 28px 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      color: #4F4F4F;
+      cursor: pointer;
+      background-color: #F2F2F2;
+      padding: 3px 8px;
+      border-radius: 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  &__all-comments-btn {
+    cursor: pointer;
+    color: #BDBDBD;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__comment-list {
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style-type: none;
+    display: inline-block;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__footer {
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__footer-inner {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    display: flex;
+    width: 100%;
+    height: 54px;
+  }
+
+  &__set-rating {
+    margin: 0 40px 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      padding-right: 15px;
+      cursor: pointer;
+
+      &:hover ~ li path {
+        fill: #E5E5E5;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__input {
+    width: 70%;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: #BDBDBD;
+    }
+  }
+
+  &__send {
+    position: relative;
+    top: -4px;
+    right: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+
+}
+
+
+@media (max-width: 767px) {
+  .large-card {
+
+    input::placeholder,
+    &__option-list li,
+    &__tags-list, 
+    &__all-comments-btn,
+    &__comment-list,
+    &__product-name,
+    &__descr {
+      font-size: 12px;
+    }
+    
+    &__photo {
+      border-radius: 0;
+    }
+
+    &__to-next,
+    &__to-prev {
+      display: none;
+    }
+
+    &__photo-wrap {
+      height: 400px;
+    }
+
+    &__head {
+      margin-bottom: 8px;
+
+    }
+
+    &__slide-markers {
+      margin-bottom: 15px;
+
+      ul li {
+        height: 5px;
+        width: 5px;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__current-price {
+      font-size: 16px;
+    }
+  
+    &__rating {
+
+      li {
+        margin-right: 4px;
+
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+    
+    &__option-list {
+      flex-flow: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      li {
+        margin-bottom: 15px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__send {
+      height: 16px;
+      width: 16px;
+      top: 6px;
+    }
+
+    &__input {
+      &::placeholder {
+        font-size: 12px;
+
+      }
+    }
+
+    &__set-rating {
+      margin-right: 12px;
+      align-items: flex-end;
+
+      li {
+        padding-right: 0;
+
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+
+  }
 }
 

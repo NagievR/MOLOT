@@ -17,7 +17,7 @@
     margin-right: 30px;
     margin-bottom: 50px;
     width: 100%;
-    height: 1381px;
+    // height: 1381px;
   }
 
   &__seller {
@@ -80,7 +80,6 @@
   .main {
     &__container {
       flex-direction: column;
-
     }
 
     &__product {
@@ -93,18 +92,30 @@
       height: auto;
       max-height: none;
       overflow: visible;
+      scroll-behavior: smooth;
     }
 
     &__strip {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
-      grid-auto-rows: minmax(383px, auto)
+      grid-auto-rows: minmax(383px, auto);
+      scroll-behavior: smooth;
     }
 
     &__strip-item {
       width: 100%;
     }
 
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+      
+    }
   }
 }
