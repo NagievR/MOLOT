@@ -1,5 +1,15 @@
 .main {
 
+  &__strip,
+  &__trust,
+  &__seller-addresses,
+  &__trust,
+  &__seller-media {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
   &__container {
     margin: 50px auto 100px auto;
     display: flex;
@@ -17,23 +27,30 @@
     margin-right: 30px;
     margin-bottom: 50px;
     width: 100%;
-    // height: 1381px;
   }
 
   &__seller {
     width: 100%;
-    height: 270px;
     background-color: #fff;
     border-radius: 10px;
     min-width: 392px;
     box-sizing: border-box;
-    padding: 22px;
-    display: flex;    
+    padding: 20px;
+    display: flex;  
   }
 
+  &__map,
   &__seller-info {
     width: 50%;
   }
+
+  &__map {
+    padding-left: 17px;
+  }
+
+  &__seller-info {
+    padding-right: 17px;
+  };
   
   &__strip-wrap {
     height: 2900px;
@@ -54,16 +71,6 @@
     scrollbar-color: #E0E0E0 transparent;
   }
 
-  &__map {
-    width: 50%;
-  }
-
-  &__strip {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
   &__strip-item {
     width: 385px;
     height: 560px;
@@ -74,6 +81,87 @@
     }
   }
 
+  &__seller-avatar {
+    margin-right: 10px;
+  }
+
+  &__seller-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__seller-name {
+    font-size: 16px;
+    color: #F2994A;
+  }
+
+  &__trust {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 30px;
+
+    li {
+      margin-right: 30px;
+      display: flex;
+      align-items: flex-start;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  &__seller-media {
+    display: flex;
+    margin-bottom: 30px;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 25px;
+      cursor: pointer;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+  
+  &__seller-tel {
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__seller-addresses {
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 10px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__store-link {
+    display: block;
+    height: 50px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #FFC813;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -99,7 +187,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
-      grid-auto-rows: minmax(383px, auto);
+      // grid-auto-rows: minmax(383px, auto);
       scroll-behavior: smooth;
     }
 
@@ -115,7 +203,23 @@
     &__container {
       padding-left: 0;
       padding-right: 0;
-      
+    }
+
+    &__strip-wrap {
+      min-width: 100%;
+    }
+
+    &__strip {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__seller {
+      flex-direction: column;
+    }
+
+    &__map,
+    &__seller-info {
+      width: 100%;
     }
   }
 }

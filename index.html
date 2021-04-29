@@ -98,8 +98,10 @@
                 </li>  
               </ul> <!-- /large-card__option-list -->
 
-              <div class="large-card__rename-these-btns">
-              </div> <!-- /large-card__rename-these-btns -->
+              <div class="large-card__btns">
+                <button class="large-card__buy-btn">купить</button>
+                <button class="large-card__write-btn">написать продавцу</button>
+              </div> <!-- /large-card__btns -->
               
               <div class="large-card__product-name">
                 Стеклоблок Basic 190x190x80 1908 W зеленый
@@ -146,7 +148,7 @@
           <div class="large-card__footer">
             <div class="large-card__footer-inner">
 
-              <ul class="large-card__set-rating">
+              <ul class="large-card__set-rating open-rating">
                 <li>
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.0948 4.42837C14.4547 3.66162 15.5453 3.66162 15.9052 4.42838L18.636 10.2457C18.7776 10.5473 19.06 10.7585 19.3893 10.8092L25.5777 11.7603C26.382 11.8839 26.7098 12.8651 26.1413 13.4473L21.6027 18.0956C21.3809 18.3228 21.2802 18.6418 21.3313 18.9552L22.3934 25.4672C22.5278 26.2911 21.6531 26.9073 20.9226 26.5033L15.4839 23.4958C15.1828 23.3293 14.8172 23.3293 14.5161 23.4958L9.07745 26.5033C8.34689 26.9073 7.47218 26.2911 7.60657 25.4672L8.66872 18.9552C8.71983 18.6418 8.61909 18.3228 8.39727 18.0956L3.8587 13.4473C3.29024 12.8651 3.61804 11.8839 4.42229 11.7603L10.6107 10.8092C10.94 10.7585 11.2224 10.5473 11.364 10.2457L14.0948 4.42837Z" fill="#FFC813"/>
@@ -174,7 +176,6 @@
                 </li>
               </ul> <!-- /large-card__set-rating -->
 
-
               <input class="large-card__input" type="text" placeholder="Добавить комментарий..." />
               
               <svg class="large-card__send" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,10 +196,48 @@
 
         <div class="main__seller">
           <div class="main__seller-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio molestias, aspernatur eligendi reprehenderit obcaecati culpa animi. Nemo rerum doloribus saepe aut ratione at nostrum eaque hic inventore delectus possimus quisquam quod dolore quibusdam, atque totam numquam deleniti expedita animi in cumque, id ex nesciunt. Molestias, deleniti officia! Ea, tempora.
+
+            <div class="main__seller-head">
+              <div class="main__seller-avatar big-avatar">
+                <img src="https://s3-alpha-sig.figma.com/img/6304/03df/ac4380a11a3e36a55787e44f407de1bd?Expires=1620604800&Signature=YOqHRV6bKNmrOq9nhuq4xWISbD8TQWSYFs5or3pL1Ragaz09AlwRnX9OTCGJHOIqfF46PTMwyDSc-tJnPp3MyLnw~b6nai7h-PDg0MXhqRyPxpsj1PWveInhFfWbYJ6AyDfvaPDVO6UVCUcCM-VJhloVMsOUKf7qfX3~h6XcknEWFOlrJIq-SpM5NbI3NAA1JrnmvldMH~DO0N04EsX0aaFf-b75ftYfsoFnO5nScdofBiDogv6K23V~A5Y-DQXaYWrGUUJX3Pt2weD6VaCMpZPkY~Ns6qXjK3OKLb7H0QyYlJtC-AvMC5GBJFq8hBeUYWKoBWceMbXwyKRMfvbTFg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="аватар">
+              </div>
+              <div class="main__seller-name">Название компании или имя</div>
+            </div>
+            
+            <ul class="main__trust">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.09469 3.26175C7.45463 2.49499 8.54521 2.49499 8.90514 3.26175L9.83343 5.23925C9.97499 5.54083 10.2575 5.7521 10.5867 5.80271L12.7443 6.13432C13.5485 6.25793 13.8763 7.23912 13.3079 7.82132L11.686 9.48245C11.4642 9.70963 11.3634 10.0287 11.4145 10.342L11.7884 12.6339C11.9227 13.4578 11.048 14.074 10.3175 13.67L8.48384 12.656C8.18271 12.4895 7.81712 12.4895 7.516 12.656L5.68237 13.67C4.95181 14.074 4.0771 13.4578 4.21149 12.6339L4.58531 10.342C4.63642 10.0287 4.53567 9.70963 4.31385 9.48245L2.69195 7.82132C2.12349 7.23912 2.45129 6.25793 3.25554 6.13432L5.4131 5.80271C5.74239 5.7521 6.02484 5.54083 6.16641 5.23925L7.09469 3.26175Z" fill="#FFC813"/>
+                </svg>
+                <span class="main__seller-rating">4.4</span>
+              </li>
+              <li><span class="main__reviews-quantity">129</span>&nbsp;отзывов</li>
+              <li><span class="main__sales-quantity">29</span>&nbsp;продаж на MOLOT</li>
+            </ul> <!-- /main__trust -->
+
+            <a class="main__seller-tel" href="tel:+1234567890">+38 099 678 89 98</a>
+
+            <ul class="main__seller-media">
+              <li>
+                <img src="./icons/media/viber.svg" alt="viber">
+                Viber
+              </li>
+              <li>
+                <img src="./icons/media/telegram.svg" alt="telegram">
+                Telegram
+              </li>
+            </ul> <!-- /__seller-media -->
+
+            <ul class="main__seller-addresses">
+              <li>Киев, ул. Пушкинская, 21</li>
+              <li>Киев, ул. Птушкинская, 21</li>
+            </ul>
+
+            <a class="main__store-link" href="#" target="_blank">Перейти в магазин</a>
+
           </div> <!-- /main__seller-info -->
           <div class="main__map">
-            <img style="width: 100%; height: 225px;" src="https://s3-alpha-sig.figma.com/img/7bb7/1bad/623815a9ab28d29ac2c5ec85740479fe?Expires=1620604800&Signature=L3tQg4mOLqCCRwD-xdIYWOAQ2pIBT5h4thHjBgf6Zs2r-trUYx6yRuku56vATBwBddCqzuHDaK6LdRDWgnXqsAbdIFXNcKyTiYZDh~QciBotK9FA63fEgd8gnMG0sxdhbJbAV~k6~D2Qdx-pyuFrRzWUeazXoeqz9QzsTNSybzSdLXAHr3Uf9ir1XAWF4GfMlqUfGdPer1oQtppiFI8N3Fp4DPYBKylfsAO1LmT07GSOyAdyFVDMgIS-DNbPWzEKy0uSWZcom1wUUEnCPd5ginNQ291zqcNIlmqtzzjKvP-0T8q78~83RDmQCfLF~1TcceqQuLTRkLyMqun3JuRrHA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="тут будет карта" />
+            <img style="width: 100%; height: 100%;" src="https://s3-alpha-sig.figma.com/img/7bb7/1bad/623815a9ab28d29ac2c5ec85740479fe?Expires=1620604800&Signature=L3tQg4mOLqCCRwD-xdIYWOAQ2pIBT5h4thHjBgf6Zs2r-trUYx6yRuku56vATBwBddCqzuHDaK6LdRDWgnXqsAbdIFXNcKyTiYZDh~QciBotK9FA63fEgd8gnMG0sxdhbJbAV~k6~D2Qdx-pyuFrRzWUeazXoeqz9QzsTNSybzSdLXAHr3Uf9ir1XAWF4GfMlqUfGdPer1oQtppiFI8N3Fp4DPYBKylfsAO1LmT07GSOyAdyFVDMgIS-DNbPWzEKy0uSWZcom1wUUEnCPd5ginNQ291zqcNIlmqtzzjKvP-0T8q78~83RDmQCfLF~1TcceqQuLTRkLyMqun3JuRrHA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="тут будет карта" />
           </div> <!-- /main__map -->
         </div> <!-- /main__seller -->
       </div> <!-- /main__product -->
