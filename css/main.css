@@ -632,13 +632,14 @@ template {
 
 .search__form {
   border: none;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50px;
+  position: relative;
 }
 
 .search__arrow-down {
@@ -651,14 +652,14 @@ template {
   display: flex;
 }
 
-.search__dropdown, .search__input {
+.search__city-dropdown, .search__input {
   box-sizing: border-box;
   border: 1px solid #BDBDBD;
   background-color: inherit;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
-.search__dropdown {
+.search__city-dropdown {
   width: 249px;
   margin: 0;
   height: 100%;
@@ -666,6 +667,12 @@ template {
   border-left: none;
   border-right: none;
   border-radius: 0;
+}
+
+.search__searchbar-dropdown {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 35px;
 }
 
 .search__selected {
@@ -742,8 +749,8 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   padding: 0 69px 0 30px;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   display: flex;
   align-items: center;
   position: relative;
@@ -764,9 +771,9 @@ template {
 .search__input {
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
   padding: 0;
   padding-left: 30px;
-  width: 775px;
   border-right: none;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -775,6 +782,31 @@ template {
 .search__input::placeholder {
   font-size: 14px;
   color: #4F4F4F;
+}
+
+.search__searchbar-wrap {
+  width: 100%;
+  z-index: 3;
+}
+
+.search__searchbar-dropdown {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.search__found-products-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+@media (max-width: 1200px) {
+  .search__searchbar-dropdown {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -786,7 +818,7 @@ template {
     top: 40px;
     right: -45px;
   }
-  .search__dropdown, .search__selected, .search__find {
+  .search__city-dropdown, .search__selected, .search__find {
     width: 46px;
     padding: 0;
   }
@@ -804,7 +836,7 @@ template {
   .search__selected::before {
     content: none;
   }
-  .search__dropdown, .search__input {
+  .search__city-dropdown, .search__input {
     height: 100%;
   }
   .search__form {
@@ -813,12 +845,15 @@ template {
   .search__input {
     padding-left: 14px;
   }
-  .search__dropdown {
+  .search__city-dropdown {
     border-left: 1px solid #BDBDBD;
   }
   .search__selected::after {
     top: 7px;
     left: 12px;
+  }
+  .search__searchbar-dropdown {
+    position: absolute;
   }
 }
 
