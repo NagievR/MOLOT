@@ -911,6 +911,9 @@ template {
 
 .large-card .complain {
   display: none;
+  color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .large-card__comment-list {
@@ -921,6 +924,7 @@ template {
 }
 
 .large-card__comment-list li {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -932,8 +936,14 @@ template {
   font-weight: 550;
 }
 
-.large-card__comment-list li:hover + .complain {
+.large-card__comment-list li:hover .complain {
   display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: 7px;
+  cursor: pointer;
 }
 
 .large-card__footer {
