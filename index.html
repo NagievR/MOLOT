@@ -124,6 +124,178 @@
 
   <main class="main">
 
+    <div class="basket">
+      <div class="basket__head">
+        <h3 class='basket__heading'>Корзина</h3>
+        <div class="basket__close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#25282B" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#25282B" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <!-- /basket__head -->
+
+      <div class="basket__item">
+        <div class="basket__seller-wrap">
+          <div class="basket__avatar avatar-smaller">
+            <img src="https://s3-alpha-sig.figma.com/img/2cf5/bb50/8557542697bb9920920ea085d155aa9d?Expires=1620604800&Signature=d1IfO~D03Is4T2u8RaPWFrJ5qqX1dE8QtwSFaLUoKYcI6OKb4rcyuNzJ79~gbHskHrDO9w5PTGCn2L9TXcbxC18v5khhang98s-naD~Z0MoKFtJ0dnNKH90WO74PZZHD0lyd9dzhLR9KNiaUFcju4OsH8CAGKXD13ZKy-S2v3ykE3PdF4OrhT7-fAXpnEEWkReJS0gY7~r7zOOMtrF8BiFxm6MYsdYHSsW1fOR9fFL6ji8VgzNNQj98rEZegGdAwFyiEg6PF3G7BM49RLXjVMR7yGXpBtCvKxvNCPlVZIjoxSDC-jRnfvgMo9waY53CygaGOvVz-q9~ZM7s9jApIEg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото продавца">
+          </div>
+          <div class="basket__seller-name">Продавцам</div>
+        </div>
+
+        <ul class="basket__product-list">
+          <li>
+            <div class="basket__photo">
+              <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1620604800&Signature=Z99fa9VVbkOzbE7ddzMYAX3h2nZvqf6FJ-uGY~nVLtu7G~eB7x4u1MEH2Mb0J5K6Wi1JGUOAmHe-VDXW4qxeOaqjueDkf1zwhSa80tnKBGwZTIUCO81dnGf0lLD0PGX5o2d0AYfXxCY1vHdW6q1rkeowlcjHKKze-Xycp9yxLxSunNn971zrKF2REpMpA9~8HtHmrEwTZ8qb2aaMQiTU8Q3a-H8Ny92pIbJboC--8bhFDK0ZuoMdmKvCePVOl0QLQhaPj52qAkj~Knel6guomfsj4M~1EAXNVuOl4L8Cq9xKe0Dc5zfn~43dEazz8iEHd9UyEE7L-Mw9mPYBI4XFXQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара">
+            </div>
+            <div class="basket__item-content">
+              <div class="basket__product-name">
+                Стеклоблок Basic 190x190x80 1908 W зеленый 
+              </div>
+              <div class="basket__row">
+                <div class="basket__quantity-wrap">
+                  <div class="basket__quantity">
+                    <button class="basket__decrement">-</button>
+                    <input type="text" value="1" />
+                    <button class="basket__increment">+</button>
+                  </div>
+                  <div class="basket__metric">шт</div>
+                </div>
+                <div class="basket__price">2 559 грн</div>
+              </div>
+            </div>
+            <div class="basket__trash">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H5H21" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="basket__photo">
+              <img src="https://s3-alpha-sig.figma.com/img/595b/ad1e/6f5ef8b5545ff64f8d694bbc6bedf459?Expires=1620604800&Signature=UITOOS1zAi2pqIu5Fu1bOFXlaA6JsIIgDAZiqLoS25BvDO6foIjmUuqKBNGakIJqvrhrxJWkVpjCI6-NEcqxStTds4vlHNjl59HwfX0-al5TBXlL6nV2MyESDyv7yCjaRNtRX~p2pdPXpklcc4~JGP2CShOTdK~BspAqjDgzpJUkiTed2MKm--wqKuAyHmQodo6l0xoOoHsqJSfndsX1YGQUPS0rd0W5NwXXTEOgke9RzaeiIPrk5KxKsGyRBkNnDaPWQvCC~K7O6Z6xh-tjM661umuEc3xKRr1fn0j~YGQJsmVZ6cPjSYfmnaJ7xd2tUFmN9olaqWudcfvsMEQurw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара">
+            </div>
+            <div class="basket__item-content">
+              <div class="basket__product-name">
+                Стеклоблок Basic 190x190x80 1908 W зеленый 
+              </div>
+              <div class="basket__row">
+                <div class="basket__quantity-wrap">
+                  <div class="basket__quantity">
+                    <button class="basket__decrement">-</button>
+                    <input type="text" value="1" />
+                    <button class="basket__increment">+</button>
+                  </div>
+                  <div class="basket__metric">шт</div>
+                </div>
+                <div class="basket__price">2 559 грн</div>
+              </div>
+            </div>
+            <div class="basket__trash">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H5H21" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="basket__photo">
+              <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1620604800&Signature=Z99fa9VVbkOzbE7ddzMYAX3h2nZvqf6FJ-uGY~nVLtu7G~eB7x4u1MEH2Mb0J5K6Wi1JGUOAmHe-VDXW4qxeOaqjueDkf1zwhSa80tnKBGwZTIUCO81dnGf0lLD0PGX5o2d0AYfXxCY1vHdW6q1rkeowlcjHKKze-Xycp9yxLxSunNn971zrKF2REpMpA9~8HtHmrEwTZ8qb2aaMQiTU8Q3a-H8Ny92pIbJboC--8bhFDK0ZuoMdmKvCePVOl0QLQhaPj52qAkj~Knel6guomfsj4M~1EAXNVuOl4L8Cq9xKe0Dc5zfn~43dEazz8iEHd9UyEE7L-Mw9mPYBI4XFXQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара">
+            </div>
+            <div class="basket__item-content">
+              <div class="basket__product-name">
+                Стеклоблок 
+              </div>
+              <div class="basket__row">
+                <div class="basket__quantity-wrap">
+                  <div class="basket__quantity">
+                    <button class="basket__decrement">-</button>
+                    <input type="text" value="1" />
+                    <button class="basket__increment">+</button>
+                  </div>
+                  <div class="basket__metric">шт</div>
+                </div>
+                <div class="basket__price">2 559 грн</div>
+              </div>
+            </div>
+            <div class="basket__trash">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H5H21" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+        </ul>
+
+        <div class="basket__summary-wrap">
+          Итого:&#8195;
+          <div class="basket__sum">228 000 грн</div>
+        </div>
+
+        <button class="basket__shop-btn">Перейти в магазин</button>
+      </div>
+      <!-- /basket__item -->
+
+      <div class="basket__item">
+        <div class="basket__seller-wrap">
+          <div class="basket__avatar avatar-smaller">
+            <img src="https://s3-alpha-sig.figma.com/img/d694/a4ba/92bd90ced8de829b3b26a5e1ea810187?Expires=1620604800&Signature=fhyryj9LkbVq6VT09anuRRjHJuQhBaf3v1UB3kS~HeiRXBME-sRCZokPYEtkcKEgnluO~Xqt2kMcBYVQsL1d~W9mtVnhZfRyK~GJ-EuYXxhCwKbzQZUs31Sy0c1hsD6cM4lFXF4BRFEi4pa~1EHPmvayrp716d37Wrw9uo2mX-r7-s6E1rnx9ox4rEly4BXhOfWHQjSB1D6qoeJ77DTTfTf8nsHA2eYfCQ2sDCiZAvNnBxf8q~-mYeTyXG2tyLvrUGOBX6ieg7nL9h7cBV53sF80EZhjsvkuxul3CtOACjQZLUbOtQ~BacI8m9fBY4Kxz6uKC90fKnOoC7H6DEujQw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото продавца">
+          </div>
+          <div class="basket__seller-name">Продавцам</div>
+        </div>
+
+        <ul class="basket__product-list">
+          <li>
+            <div class="basket__photo">
+              <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1620604800&Signature=Z99fa9VVbkOzbE7ddzMYAX3h2nZvqf6FJ-uGY~nVLtu7G~eB7x4u1MEH2Mb0J5K6Wi1JGUOAmHe-VDXW4qxeOaqjueDkf1zwhSa80tnKBGwZTIUCO81dnGf0lLD0PGX5o2d0AYfXxCY1vHdW6q1rkeowlcjHKKze-Xycp9yxLxSunNn971zrKF2REpMpA9~8HtHmrEwTZ8qb2aaMQiTU8Q3a-H8Ny92pIbJboC--8bhFDK0ZuoMdmKvCePVOl0QLQhaPj52qAkj~Knel6guomfsj4M~1EAXNVuOl4L8Cq9xKe0Dc5zfn~43dEazz8iEHd9UyEE7L-Mw9mPYBI4XFXQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара">
+            </div>
+            <div class="basket__item-content">
+              <div class="basket__product-name">
+                Стеклоблок Basic 190x190x80 1908 W зеленый 
+              </div>
+              <div class="basket__row">
+                <div class="basket__quantity-wrap">
+                  <div class="basket__quantity">
+                    <button class="basket__decrement">-</button>
+                    <input type="text" value="1" />
+                    <button class="basket__increment">+</button>
+                  </div>
+                  <div class="basket__metric">шт</div>
+                </div>
+                <div class="basket__price">2 559 грн</div>
+              </div>
+            </div>
+            <div class="basket__trash">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H5H21" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11V17" stroke="#25282B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+        </ul>
+
+        <div class="basket__summary-wrap">
+          Итого:&#8195;
+          <div class="basket__sum">228 000 грн</div>
+        </div>
+
+        <button class="basket__shop-btn">Перейти в магазин</button>
+      </div>
+      <!-- /basket__item -->
+      
+
+    </div>
+    <!-- /basket -->
+
     <div class="main__block-bg-gray">
       <div class="main__vertical-padding-container js-move-container ">
         <ul class="main__promotion-list js-move-list">
