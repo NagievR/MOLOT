@@ -839,13 +839,73 @@ template {
 }
 
 .search__found-products-list {
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   list-style-type: none;
 }
 
 .search__found-products-list li {
-  padding: 0 36px;
+  padding: 8px 42px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.search__found-products-list li:hover {
+  background-color: #F2F2F2;
+}
+
+.search__all-results-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 17px;
+  color: #F2994A;
+  font-size: 10px;
+  margin-left: 36px;
+  position: relative;
+}
+
+.search__all-results-btn::after {
+  content: '';
+  background-image: url("../assets/icons/search/orange-arrow.svg");
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: -2px;
+}
+
+.search__photo {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.search__price {
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.search__found-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search__name {
+  height: 19px;
+  max-width: 560px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.search__type {
+  color: #BDBDBD;
+  font-size: 10px;
+}
+
+.search__categories-container {
+  padding: 0 35px;
 }
 
 @media (max-width: 1200px) {
