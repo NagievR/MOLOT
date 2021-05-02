@@ -63,12 +63,13 @@
       top: 15px;
     }
 
-    &::before {
-      content: url('../assets/icons/arrow-down.svg');
-      position: absolute;
-      top: 18px;
-      right: 23px;
-    }
+    // &::before {
+    //   content: url('../assets/icons/arrow-down.svg');
+    //   position: absolute;
+    //   top: 18px;
+    //   right: 23px;
+    // }
+    
   }
 
   &__dropping-block-container {
