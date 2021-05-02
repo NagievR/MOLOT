@@ -539,10 +539,84 @@
                         <img src="https://s3-alpha-sig.figma.com/img/3039/e1c7/201796abe85012b154258c634202ecb0?Expires=1620604800&Signature=Mka-XAdKSRVslt-9jp1cHM3B5cc4jCf1IiR0NdGHFO1wU-YDU3SGKTiOgHqhMwF4haIgFgOZ3kFF4FKVGUSmnEyxxx60mNAMUjxlon8TdkySO2OiwWrnVY82Ri~rEmeQjSn5uNGIbv2H4uQkLr2JVOJtosZDWXJMYeP7sHASWksg0i60xbLd9HnLlcjcR90q0gbtOBKXqa15~mXgk9grF5xVFiy1lZ7ECEJT97aM6wFf5PU6Yv0K-qrxr0MTafh7XvieGUpuQiIAsDl8Y2~P6JKSYOmohCHCfGTq0-IWLkcmIVvSnLwzMYTnDE-QcjSHv~kNkZz4h383JcHzoLJeSA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
                       </li>
                     </ul>   
-
                   <!-- </div>
                 </div> -->
+
+                <div class="product-card__characteristics-wrap">
+                  <div class="product-card__characteristics">
+                    <h3 class="product-card__title">Характеристики</h3>
+                    <h4 class="product-card__subtitle">Основные</h4>
+
+                    <ul class="product-card__charact-list">
+                      <li>
+                        <div class="product-card__charact-name"><span>Вид стеклоблока</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">стандартный</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Стандарт</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Вид стеклоблока</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">Комбинированный</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Код</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">#E0E0E0</div>
+                      </li>
+                    </ul>
+
+                    <h4 class="product-card__subtitle">Размеры</h4>
+                    <ul class="product-card__charact-list">
+                      <li>
+                        <div class="product-card__charact-name"><span>Ширина</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">228см (28м)</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Высота</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">22см (2,7фвм)</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Глубина</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">228мм (20ы вю)</div>
+                      </li>
+                    </ul>
+
+                    <h4 class="product-card__subtitle">Результрующие качества</h4>
+                    <ul class="product-card__charact-list">
+                      <li>
+                        <div class="product-card__charact-name"><span>Производитель</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">ReStEq</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Страна производитель</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">Украина</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Плотность</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">Пустотелый</div>
+                      </li>
+                      <li>
+                        <div class="product-card__charact-name"><span>Морозостойкость</span></div>
+                        <div class="product-card__line"></div>
+                        <div class="product-card__charact-descr">F50</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /product-card__characteristics-wrap -->
               </div>
+              <!-- /product-card__screen -->
 
               <div class="product-card__body">
                 <div class="product-card__content">
@@ -551,6 +625,7 @@
                     <li></li>
                     <li></li>
                     <li class="active"></li>
+                    <li></li>
                   </ul>
                   <div class="product-card__options-wrap">
                     <ul class="product-card__options">
@@ -998,9 +1073,17 @@
       }
     };
 
+    // characteristics
+    const characteristicsBtn = document.querySelector('.product-card__charac-btn');
+    const characteristics = document.querySelector('.product-card__characteristics-wrap');
+    characteristicsBtn.onclick = () => {
+      characteristicsBtn.classList.toggle('active');
+      characteristics.classList.toggle('active');
+    };
+
 
   </script>
-<!-- ========================================= TESTING ========================================= -->
+  <!-- ========================================= TESTING ========================================= -->
 
   <script type="module" src="./scripts/main.js"></script>
 </body>
