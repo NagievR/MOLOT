@@ -43,14 +43,28 @@
     border-radius: 0;
   }
 
-  &__searchbar-dropdown {
+  &__dropping-cities,
+  &__dropping-results {
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-2%);
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__dropping-results {
     width: 100%;
     box-sizing: border-box;
     padding: 17px 0 0 0;
   }
 
   &__selected {
-    padding: 16px;
+    padding: 15px;
     padding-left: 55px;
     border-left: 1px solid #BDBDBD;
     cursor: pointer;
@@ -62,17 +76,9 @@
       left: 23px;
       top: 15px;
     }
-
-    // &::before {
-    //   content: url('../assets/icons/arrow-down.svg');
-    //   position: absolute;
-    //   top: 18px;
-    //   right: 23px;
-    // }
-    
   }
 
-  &__dropping-block-container {
+  &__dropping-cities {
     position: absolute;
     z-index: 10;
     width: 268px;
@@ -166,10 +172,7 @@
     z-index: 3;
   }
 
-
-  // search bar dropdown
-
-  &__searchbar-dropdown {
+  &__dropping-results {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     margin-top: 10px;
     border-radius: 10px;
@@ -197,7 +200,7 @@
   &__all-results-btn {
     cursor: pointer;
     display: inline-block;
-    padding-bottom: 17px;
+    margin-bottom: 17px;
     color: #F2994A;
     font-size: 10px;
     margin-left: 36px;
@@ -209,7 +212,7 @@
       position: absolute;
       height: 16px;
       width: 16px;
-      top: -2px;
+      top: 1px;
     }
   }
 
@@ -231,12 +234,7 @@
 
   &__name {
     line-height: 18.9px;
-    max-height: 19px;
     max-width: 560px;
-    // display: flex;
-    overflow: hidden;
-    // white-space: nowrap;
-    // text-overflow: ellipsis;
   }
 
   &__type {
@@ -255,7 +253,8 @@
     border-top: 1px solid #E0E0E0;
 
     li {
-      margin-top: 12px;      
+      margin-top: 12px;    
+      cursor: pointer;  
     }
   }
 
@@ -268,9 +267,34 @@
 
 @media (max-width: 1200px) {
   .search {
-    &__searchbar-dropdown {
+    &__dropping-results {
       padding-left: 0;
       padding-right: 0;
+    }
+      
+    &__name,
+    &__price {
+      font-size: 10px;
+      line-height: 13.5px;
+    }
+
+    &__found-products-list {
+      li {
+        padding: 3px 25px 3px 15px;
+      }
+    }
+
+    &__category-list {
+      padding: 0 0 15px 15px;
+    }
+
+    &__categories-container {
+      padding: 0;
+    }
+
+    &__all-results-btn {
+      margin-bottom: 8px;
+      margin-left: 15px;
     }
   }
 }
@@ -282,7 +306,7 @@
       right: 50%;  
     }
 
-    &__dropping-block-container {
+    &__dropping-cities {
       top: 40px;
       right: -45px;
     }
@@ -337,13 +361,13 @@
       }
     }
 
-    &__searchbar-dropdown {
+    &__dropping-results {
       position: absolute;
     }
 
-    &__searchbar-dropdown {
+    &__dropping-results {
       margin-top: 5px;
     }
-  
+
   }
 }

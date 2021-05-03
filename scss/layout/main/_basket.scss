@@ -11,6 +11,22 @@
   transition: 0.5s ease-in-out;
   box-sizing: border-box;
 
+  // mozilla scrollbar 
+  scrollbar-width: thin;
+  scrollbar-color: #E0E0E0 transparent;
+  &::-webkit-scrollbar{
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #E0E0E0;
+    border-radius: 2px;
+    padding-right: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover{
+    width: 80px;
+    background-color: #ccc9c9;
+  }
+
   &__heading {
     font-size: 28px;
     margin: 0;
