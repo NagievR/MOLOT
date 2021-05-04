@@ -859,7 +859,7 @@ template {
   z-index: 2;
 }
 
-.categories-page__category-list {
+.categories-page__categories {
   margin-bottom: 30px;
 }
 
@@ -1637,14 +1637,14 @@ template {
   margin: 0 0 20px 0;
 }
 
-.category-list__list {
+.categories__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
 }
 
-.category-list__item {
+.categories__item {
   width: 215px;
   cursor: pointer;
   border-radius: 10px;
@@ -1657,21 +1657,21 @@ template {
   box-sizing: border-box;
 }
 
-.category-list__description {
+.categories__description {
   font-size: 14px;
   width: 60%;
   line-height: 20px;
 }
 
-.category-list__image-wrap {
+.categories__image-wrap {
   object-fit: cover;
 }
 
-.category-list__image-wrap img {
+.categories__image-wrap img {
   height: 50px;
 }
 
-.category-list__show-all-btn {
+.categories__show-all-btn {
   display: none;
 }
 
