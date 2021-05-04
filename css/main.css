@@ -4,10 +4,6 @@
   padding: 0 20px;
 }
 
-.chat-page {
-  background-color: #F6F6F6;
-}
-
 .chat-page__heading {
   margin: 40px 0 50px 0;
   text-align: left;
@@ -1062,6 +1058,7 @@ body {
   font-size: 14px;
   min-width: 320px;
   line-height: 18.9px;
+  background-color: #F6F6F6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
