@@ -1,4 +1,4 @@
-.card-container {
+.found-ads {
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 1200px) {
-  .card-container {
+  .found-ads {
     &__card-list {
       grid-template-columns: repeat(2, calc(50% - 5px));
     }
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 767px) {
-  .card-container {
+  .found-ads {
     margin-top: 30px;
 
     &__card-list {

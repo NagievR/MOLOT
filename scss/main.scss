@@ -4,14 +4,14 @@
 
 
 // main
-@import "./layout/main/card-container";
+@import "./layout/main/found-ads";
 @import "./layout/filters/filters";
 @import "./layout/main/page-counter";
 @import "./layout/main/categories-page";
 
 // reused
 @import "./layout/main/search";
-@import "./layout/card";
+@import "./layout/product-card";
 @import "./layout/bottom-block";
 @import "./layout/avatars";
 @import "./layout/containers";

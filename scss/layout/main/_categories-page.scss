@@ -40,6 +40,7 @@
     align-items: center;
     box-sizing: border-box;
     outline: none;
+    cursor: pointer;
   }
 
   &__bottom-block {
@@ -58,12 +59,10 @@
     &::after {
       content: '';
       background-image: url('../assets/icons/arrow.svg');
-      height: 12px;
-      width: 12px;
-      transform: rotate(-90deg);
-      background-repeat: no-repeat;
-      margin-left: 22px;
-      background-size: 9px 11px;
+      display: block;
+      background-size: cover;
+      margin-left: 5px;
+      transform: translateY(1px);
     }
   }
 }
@@ -79,6 +78,11 @@
     &__show-more-btn {
       margin-bottom: 35px;
     }
+
+    &__search {
+      margin-right: 25px;
+      width: calc(100% - 160px - 25px);
+    }
   }
 }
 
@@ -89,6 +93,10 @@
 
     &__category-list,
     &__bottom-block-container {
+      display: none;
+    }
+
+    &__categories {
       display: none;
     }
 
@@ -109,12 +117,16 @@
       justify-content: space-between;
     }
 
+    &__search {
+      display: none;
+    }
+
     &__all-ads {
       display: flex;
 
       &::after {
-        margin-left: 8px;
-        background-size: 10px 11px;
+        height: 16px;
+        width: 16px;
       }
     }
 
