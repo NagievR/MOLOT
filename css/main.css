@@ -672,14 +672,9 @@ template {
 }
 
 .large-card {
-  transition: 0.5s;
   width: 100%;
   border-radius: 10px;
   background-color: #fff;
-}
-
-.large-card .active-marker {
-  background-color: #4F4F4F;
 }
 
 .large-card__photo-wrap {
@@ -769,6 +764,10 @@ template {
   border-radius: 50%;
   background-color: #BDBDBD;
   margin-right: 10px;
+}
+
+.large-card__slide-markers ul li.active {
+  background-color: #4F4F4F;
 }
 
 .large-card__slide-markers ul li:last-child {
@@ -971,10 +970,10 @@ template {
   min-width: 30px;
   flex-shrink: 0;
   position: relative;
+  transition: 0.5s;
 }
 
 .large-card__set-rating li {
-  padding-right: 15px;
   cursor: pointer;
   position: absolute;
 }
@@ -989,6 +988,10 @@ template {
 
 .large-card__set-rating.active {
   width: 200px;
+}
+
+.large-card__set-rating.active li {
+  padding-right: 15px;
 }
 
 .large-card__set-rating.active li:nth-child(2) {
@@ -1023,6 +1026,10 @@ template {
   right: 0;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.large-card__send.active path {
+  fill: #ffc813;
 }
 
 .large-card__btns {
@@ -1101,6 +1108,9 @@ template {
   .large-card__set-rating li svg {
     height: 24px;
     width: 24px;
+  }
+  .large-card__set-rating.active {
+    width: 120px;
   }
   .large-card__footer-inner {
     height: 36px;

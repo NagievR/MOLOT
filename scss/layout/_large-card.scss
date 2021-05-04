@@ -1,10 +1,4 @@
-.large-card {
-  .active-marker {
-    background-color: #4F4F4F;
-  }
-
-  transition: 0.5s;
-  
+.large-card {  
   width: 100%;
   border-radius: 10px;
   background-color: #fff;
@@ -77,7 +71,6 @@
     right: 20px;
   }
 
-
   &__slide-markers {
     display: flex;
     justify-content: center;
@@ -96,6 +89,10 @@
         border-radius: 50%;
         background-color: #BDBDBD;
         margin-right: 10px;
+
+        &.active {
+          background-color: #4F4F4F;
+        }
 
         &:last-child {
           margin-right: 0;
@@ -306,9 +303,9 @@
     min-width: 30px;
     flex-shrink: 0;
     position: relative;
+    transition: 0.5s;
 
     li {
-      padding-right: 15px;
       cursor: pointer;
       position: absolute;
       
@@ -325,6 +322,8 @@
       width: 200px;
   
       li {
+        padding-right: 15px;
+        
         &:nth-child(2) {
           left: 20%;
         } 
@@ -357,6 +356,12 @@
     right: 0;
     cursor: pointer;
     flex-shrink: 0;
+
+    &.active {
+      path {
+        fill: rgb(255, 200, 19);
+      }
+    }
   }
 
   &__btns {
@@ -411,6 +416,8 @@
           margin-right: 0;
         }
       }
+
+
     }
 
     &__current-price {
@@ -470,7 +477,9 @@
         }
       }
 
-      
+      &.active {
+        width: 120px;
+      }
     }
 
     &__footer-inner {
