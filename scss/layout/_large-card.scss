@@ -1,10 +1,9 @@
-
-
-
 .large-card {
   .active-marker {
     background-color: #4F4F4F;
   }
+
+  transition: 0.5s;
   
   width: 100%;
   border-radius: 10px;
@@ -321,24 +320,24 @@
         padding-right: 0;
       }
     }
-  }
 
-  .open-rating {
-    width: 200px;
-
-    li {
-      &:nth-child(2) {
-        left: 20%;
-      } 
-      &:nth-child(3) {
-        left: 40%;
-      } 
-      &:nth-child(4) {
-        left: 60%;
-      } 
-      &:nth-child(5) {
-        left: 80%;
-      } 
+    &.active {
+      width: 200px;
+  
+      li {
+        &:nth-child(2) {
+          left: 20%;
+        } 
+        &:nth-child(3) {
+          left: 40%;
+        } 
+        &:nth-child(4) {
+          left: 60%;
+        } 
+        &:nth-child(5) {
+          left: 80%;
+        } 
+      }
     }
   }
 
@@ -460,7 +459,8 @@
       margin-right: 2px;
       align-items: flex-end;
       left: -4px;
-
+      transition: 0.25s;
+      
       li {
         padding-right: 0;
 
@@ -469,6 +469,8 @@
           width: 24px;
         }
       }
+
+      
     }
 
     &__footer-inner {
