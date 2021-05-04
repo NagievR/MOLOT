@@ -11,7 +11,8 @@
 .chat-page__heading {
   margin: 40px 0 50px 0;
   text-align: left;
-  font-size: 48px;
+  font-size: 38px;
+  font-weight: 400;
 }
 
 .chat-page__main {
@@ -217,7 +218,7 @@
   align-items: center;
   width: 100%;
   border: 1px solid #E0E0E0;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
   padding: 15px 20px 15px 15px;
   height: 70px;
@@ -281,13 +282,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 12px;
-  height: 13px;
-  max-width: 85%;
+  height: 19px;
   max-width: 295px;
 }
 
-.active-chat .recent__dialog {
-  border-left: 5px solid #FFC813;
+.favorite .recent__dialog {
+  border-left: 7px solid #FFC813;
 }
 
 .new-message .recent__new-messages-count {
@@ -312,7 +312,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    height: 25px;
   }
   .recent__dialog-list {
     margin: 0;
@@ -357,11 +356,11 @@
   .recent__dialog-card {
     background-color: #F2F2F2;
   }
-  .active-chat {
-    border-left: 4px solid #FFC813;
+  .favorite {
+    border-left: 6px solid #FFC813;
     background-color: #fff;
   }
-  .active-chat .recent__dialog {
+  .favorite .recent__dialog {
     border-left: none;
     background-color: #fff;
   }
@@ -431,7 +430,12 @@
   display: none;
 }
 
+.chat__options-btn, .chat__back-btn {
+  display: none;
+}
+
 .chat__header {
+  position: relative;
   box-sizing: border-box;
   padding: 10px 18px;
   background-color: #F2F2F2;
@@ -442,7 +446,9 @@
 }
 
 .chat__mobile-options {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
   border-radius: 4px;
   position: absolute;
   z-index: 5;
@@ -562,7 +568,7 @@
 .chat__message-body {
   border: 1px solid #E0E0E0;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   border-bottom-left-radius: 0;
   font-size: 14px;
   box-sizing: border-box;
@@ -632,10 +638,10 @@
 
 .chat__textarea {
   border: 1px #E0E0E0 solid;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: none;
   outline: none;
-  padding: 15px 50px 15px 15px;
+  padding: 13px 20px 13px 15px;
   box-sizing: border-box;
   width: 100%;
   height: 50px;
@@ -704,9 +710,9 @@
 }
 
 .chat__advices-text::after {
-  content: url("http://127.0.0.1:5500/chat/assets/icons/arrow.svg");
+  content: url("../../assets/icons/arrow.svg");
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   right: 0;
 }
 
@@ -773,34 +779,26 @@
     border-bottom: 1px solid #E0E0E0;
     height: 50px;
   }
-  .chat__header::before {
-    content: '';
-    margin-right: 26px;
-    transform: rotate(90deg);
-    display: block;
-    background-image: url("../assets/icons/arrow.svg");
-    background-size: 11px 9px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    width: 17px;
-    height: 22px;
-  }
-  .chat__header::after {
-    content: '';
-    display: block;
-    background-image: url("../assets/icons/option-dots.svg");
-    background-size: 10px 10px;
-    background-repeat: no-repeat;
-    background-size: 7px 18px;
-    cursor: pointer;
-    width: 9px;
-    height: 19px;
-  }
   .chat__col:nth-child(1) {
     width: 100%;
   }
   .chat__col:nth-child(2) {
     display: none;
+  }
+  .chat__back-btn {
+    margin-right: 26px;
+    transform: rotate(90deg);
+    display: block;
+    cursor: pointer;
+    width: 19px;
+    height: 15px;
+  }
+  .chat__options-btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    z-index: 1;
   }
   .chat__bottom-block {
     align-items: flex-end;
@@ -864,8 +862,10 @@
   .chat__product-name {
     display: none;
   }
-  .chat__mobile-options {
-    display: block;
+  .chat__mobile-options.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
   }
   .chat__mobile-option-item {
     padding-bottom: 10px;
@@ -887,7 +887,7 @@
     flex-flow: row-reverse;
   }
   .my-msg .chat__message-body {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 0;
     margin-right: 8px;
   }
@@ -1028,6 +1028,9 @@
 body {
   font-family: 'HelveticaNeueCyr', serif;
   font-weight: 400;
+  font-size: 14px;
+  min-width: 320px;
+  line-height: 18.9px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
