@@ -9,207 +9,50 @@
   <title>Document</title>
 </head>
 <body>
+
   <header class="header">
-    <div class="header__head">
-      <div class="container">
-        <div class="header__head-inner">
-          <div class="header-col">
-            <img class="header__logo" src="./assets/images/logo.svg" alt="логотип">
-          </div>
-          <div class="header-col">
-            <div class="header__options">
-              <div class="header__lang-wrap">
-                <a class="header__lang-btn active">Рус</a>
-                &nbsp;|&nbsp;
-                <a class="header__lang-btn">Укр</a>
-              </div>
-              <div class="header__icon-wrap">
-                <a class="header__favorite-btn" href="#">
-                  <span class="header__favorite-count">0</span>
-                  <img src="./assets/icons/header/favorites.svg" alt="избранное">
-                </a>
-              </div>
-              <div class="header__icon-wrap">
-                <a class="header__cart-btn" href="#">
-                  <span class="header__cart-count">0</span>
-                  <img src="./assets/icons/header/cart.svg" alt="корзина">
-                </a>                
-              </div>
-              <div class="header__icon-wrap">
-                <a class="header__account-btn" href="#">
-                  <img src="./assets/icons/header/account.svg" alt="личный кабинет">
-                </a>
-              </div>
-              <button class="header__place-product">
-                Разместить товаp
-              </button>
+    <div class="container">
+      <div class="header__head-inner">
+        <div class="header__col">
+          <img class="header__logo" src="./assets/images/logo.svg" alt="логотип">
+        </div>
+        <div class="header__col">
+          <div class="header__options">
+            <div class="header__lang-wrap">
+              <a class="header__lang-btn active">Рус</a>
+              &nbsp;|&nbsp;
+              <a class="header__lang-btn">Укр</a>
             </div>
-            <div class="header__burger"><span></span></div>
+            <div class="header__icon-wrap">
+              <a class="header__favorite-btn" href="#">
+                <span class="header__favorite-count">0</span>
+                <img src="./assets/icons/header/favorites.svg" alt="избранное">
+              </a>
+            </div>
+            <div class="header__icon-wrap">
+              <a class="header__cart-btn" href="#">
+                <span class="header__cart-count">0</span>
+                <img src="./assets/icons/header/cart.svg" alt="корзина">
+              </a>                
+            </div>
+            <div class="header__icon-wrap">
+              <a class="header__account-btn" href="#">
+                <img src="./assets/icons/header/account.svg" alt="личный кабинет">
+              </a>
+            </div>
+            <button class="header__place-product">
+              Разместить товаp
+            </button>
           </div>
-        </div> 
-        <!-- /header__head-inner -->
+          <div class="header__burger"><span></span></div>
+        </div>
       </div> 
-      <!-- /container -->
-    </div> 
-    <!-- /header__head -->
-
-    <div class="header__body">
-      <div class="container main__vertical-padding-container">
-        <div class="header__body-inner">
-
-          <h2 class="header__heading">
-            Что ищете?
-          </h2>
-
-          <div class="search header__search">
-            <div class="search__form">
-
-              <div class="search__searchbar-wrap">
-                <input class="search__input" type="text" placeholder="Поиск" />
-
-                <div class="search__dropping-results">
-                  <div class="search__all-results-btn">Все результаты поиска</div>
-
-                  <ul class="search__found-products-list">
-                    <li>
-                      <div class="search__photo avatar-smaller">
-                        <img src="https://s3-alpha-sig.figma.com/img/7740/3851/ee241ee4186bc299c65f77e3badd8815?Expires=1620604800&Signature=NzJCg~TTn-typH7w2jBSImUp6XKpqfIhsZEMaxfrWCrMlS0IGmBp4D-adoWfHsFVar~i2UGncb2i4laj67AnWP188fL56-0YW26-wkHOQZit9ZL2L9~iTmWS1jflR-KomdYDxLggFzF3AI2XY3FYEmdeyI486EX56HhbCPeqBIDO43obqE5~aksUeLIah3OFWFSxtNv49N63QNhj68w1wpGlZBhkbD3FFrog6vXzvtk1DRjLaFZ2pliphdH-Srza1qhMreqz5DUX9h7oFsA1lrxhmwnABTUnXkyu0jJDsT~xKbyVVsvrWgf2zGCNAG8S8xNcKEYRemU7SsQa7-gYUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
-                      </div>
-                      <div class="search__found-content">
-                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
-                        <div class="search__type">Товар</div>
-                      </div>
-                      <div class="search__price">28,50 грн</div>
-                    </li>
-                    <li>
-                      <div class="search__photo avatar-smaller">
-                        <img src="https://s3-alpha-sig.figma.com/img/7740/3851/ee241ee4186bc299c65f77e3badd8815?Expires=1620604800&Signature=NzJCg~TTn-typH7w2jBSImUp6XKpqfIhsZEMaxfrWCrMlS0IGmBp4D-adoWfHsFVar~i2UGncb2i4laj67AnWP188fL56-0YW26-wkHOQZit9ZL2L9~iTmWS1jflR-KomdYDxLggFzF3AI2XY3FYEmdeyI486EX56HhbCPeqBIDO43obqE5~aksUeLIah3OFWFSxtNv49N63QNhj68w1wpGlZBhkbD3FFrog6vXzvtk1DRjLaFZ2pliphdH-Srza1qhMreqz5DUX9h7oFsA1lrxhmwnABTUnXkyu0jJDsT~xKbyVVsvrWgf2zGCNAG8S8xNcKEYRemU7SsQa7-gYUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
-                      </div>
-                      <div class="search__found-content">
-                        <div class="search__name">
-                          Болт мебельный оцинкованный  DIN 603 М6х120 мм DIN 603 М6х120 ммDIN 603 М6х120 ммDIN2 
-                        </div>
-                        <div class="search__type">Товар</div>
-                      </div>
-                      <div class="search__price">28,50 грн</div>
-                    </li>
-                    <li>
-                      <div class="search__photo avatar-smaller">
-                        <img src="https://s3-alpha-sig.figma.com/img/711e/6993/dba19f192501a8f1a010aa1b418cc34a?Expires=1620604800&Signature=MWI8FrSK9SRLbGiL6sSgBkhpN3O3z9kUdAmpxII6WyFb33ENCVNZ2tZBVyRl-PtTOKRWaJlanqJ1R47z1JjnlWHp5YwSTB2AuP-C03YF2joA9uluMSCpp4yqMXER042S6Dc845Fahhky3DtL3WGsDI8Hky0ima-no8nE2lVkrmBSqlRjcCmfcWvkWb04KgY4YgKLFBH2nngR8Efc4qu5S0EQI2B4Nxg7MF-a0SaXqqxq1TEdsuWf045spUn2wUkDnKrEcJ-Nl4V8mxBL-86Bv-b746h1bNL0L34SwYn6EQPTDM~G5R8hEInJxCUNZ2CZ9sBrXr42kev1WSyQMgRWpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
-                      </div>
-                      <div class="search__found-content">
-                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
-                        <div class="search__type">Услуга</div>
-                      </div>
-                      <div class="search__price">28,50 грн</div>
-                    </li>
-                    <li>
-                      <div class="search__photo avatar-smaller">
-                        <img src="https://s3-alpha-sig.figma.com/img/711e/6993/dba19f192501a8f1a010aa1b418cc34a?Expires=1620604800&Signature=MWI8FrSK9SRLbGiL6sSgBkhpN3O3z9kUdAmpxII6WyFb33ENCVNZ2tZBVyRl-PtTOKRWaJlanqJ1R47z1JjnlWHp5YwSTB2AuP-C03YF2joA9uluMSCpp4yqMXER042S6Dc845Fahhky3DtL3WGsDI8Hky0ima-no8nE2lVkrmBSqlRjcCmfcWvkWb04KgY4YgKLFBH2nngR8Efc4qu5S0EQI2B4Nxg7MF-a0SaXqqxq1TEdsuWf045spUn2wUkDnKrEcJ-Nl4V8mxBL-86Bv-b746h1bNL0L34SwYn6EQPTDM~G5R8hEInJxCUNZ2CZ9sBrXr42kev1WSyQMgRWpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
-                      </div>
-                      <div class="search__found-content">
-                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
-                        <div class="search__type">Услуга</div>
-                      </div>
-                      <div class="search__price">28,50 грн</div>
-                    </li>
-                  </ul>
-
-                  <div class="search__categories-container">
-                    <ul class="search__category-list">
-                      <li class="search__category-item">
-                        <span class="search__name">Болты 
-                          <span class="search__quantity">(<span>28<span>)</span>
-                        </span>
-                        <div class="search__type">Категория товара</div>
-                      </li>
-                      <li class="search__category-item">
-                        <span class="search__name">Болт мебельный 
-                          <span class="search__quantity">(<span>228<span>)</span>
-                        </span>
-                        <div class="search__type">Категория товара</div>
-                      </li>
-                    </ul>
-
-                    <ul class="search__category-list">
-                      <li class="search__category-item">
-                        <span class="search__name">Прикрутить 
-                          <span class="search__quantity">(<span>28<span>)</span>
-                        </span>
-                        <div class="search__type">Категория услуг</div>
-                      </li>
-                      <li class="search__category-item">
-                        <span class="search__name">Болт мебельный 
-                          <span class="search__quantity">(<span>228<span>)</span>
-                        </span>
-                        <div class="search__type">Категория услуг</div>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-                <!-- /search__found-products-lis -->
-              </div>
-              <!-- /search__searchbar-wrap -->
-              
-              <div class="search__right-block">
-                <div class="search__city-dropdown">
-                  <div class="search__selected">
-                    <div class="search__selected-text">Вся Украина</div>
-                  </div>
-                  <div class="search__dropping-cities">
-                    <ul class="search__dropping-block">
-                      <li>Вся Украина</li>
-                      <li>Винницкая область</li>
-                      <li>Днепропетровская область</li>
-                      <li>Волынская область</li>
-                      <li>Винницкая область</li>
-                      <li>Днепропетровская область</li>
-                      <li>Волынская область</li>
-                      <li>Винницкая область</li>
-                      <li>Днепропетровская область</li>
-                      <li>Волынская область</li>
-                      <li>Винницкая область</li>
-                      <li>Днепропетровская область</li>
-                      <li>Волынская область</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class='search__find'>
-                  <div class="search__find-text">Найти</div>
-                </div>
-              </div> <!-- /search__right-block -->
-            </div> <!-- /search__form -->
-          </div> <!-- /search header__search -->
-
-          <div class="popular">
-            <h3 class="popular__heading">Популярные запросы</h3>
-            <ul class="popular__list">
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
-              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
-            </ul>
-          </div>
-
-        </div> <!-- /header__body-inner -->
-      </div> <!-- /container -->
-    </div> <!-- /header__body -->
+    </div>
   </header>
 
   <main class="main">
 
+    <!-- basket -->
     <div class="basket">
       <div class="basket__head">
         <h3 class='basket__heading'>Корзина</h3>
@@ -377,27 +220,193 @@
         <button class="basket__shop-btn">Перейти в магазин</button>
       </div>
       <!-- /basket__item -->
-      
-
     </div>
     <!-- /basket -->
 
+    <!-- subheader -->
+    <div class="subheader">
+      <div class="container main__vertical-padding-container">
+        <div class="subheader__inner">
+    
+          <h2 class="subheader__heading">
+            Что ищете?
+          </h2>
+    
+          <div class="search subheader__search">
+            <div class="search__form">
+    
+              <div class="search__searchbar-wrap">
+                <input class="search__input" type="text" placeholder="Поиск" />
+    
+                <div class="search__dropping-results">
+                  <div class="search__all-results-btn">Все результаты поиска</div>
+    
+                  <ul class="search__found-products-list">
+                    <li>
+                      <div class="search__photo avatar-smaller">
+                        <img src="https://s3-alpha-sig.figma.com/img/7740/3851/ee241ee4186bc299c65f77e3badd8815?Expires=1620604800&Signature=NzJCg~TTn-typH7w2jBSImUp6XKpqfIhsZEMaxfrWCrMlS0IGmBp4D-adoWfHsFVar~i2UGncb2i4laj67AnWP188fL56-0YW26-wkHOQZit9ZL2L9~iTmWS1jflR-KomdYDxLggFzF3AI2XY3FYEmdeyI486EX56HhbCPeqBIDO43obqE5~aksUeLIah3OFWFSxtNv49N63QNhj68w1wpGlZBhkbD3FFrog6vXzvtk1DRjLaFZ2pliphdH-Srza1qhMreqz5DUX9h7oFsA1lrxhmwnABTUnXkyu0jJDsT~xKbyVVsvrWgf2zGCNAG8S8xNcKEYRemU7SsQa7-gYUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
+                      </div>
+                      <div class="search__found-content">
+                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
+                        <div class="search__type">Товар</div>
+                      </div>
+                      <div class="search__price">28,50 грн</div>
+                    </li>
+                    <li>
+                      <div class="search__photo avatar-smaller">
+                        <img src="https://s3-alpha-sig.figma.com/img/7740/3851/ee241ee4186bc299c65f77e3badd8815?Expires=1620604800&Signature=NzJCg~TTn-typH7w2jBSImUp6XKpqfIhsZEMaxfrWCrMlS0IGmBp4D-adoWfHsFVar~i2UGncb2i4laj67AnWP188fL56-0YW26-wkHOQZit9ZL2L9~iTmWS1jflR-KomdYDxLggFzF3AI2XY3FYEmdeyI486EX56HhbCPeqBIDO43obqE5~aksUeLIah3OFWFSxtNv49N63QNhj68w1wpGlZBhkbD3FFrog6vXzvtk1DRjLaFZ2pliphdH-Srza1qhMreqz5DUX9h7oFsA1lrxhmwnABTUnXkyu0jJDsT~xKbyVVsvrWgf2zGCNAG8S8xNcKEYRemU7SsQa7-gYUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
+                      </div>
+                      <div class="search__found-content">
+                        <div class="search__name">
+                          Болт мебельный оцинкованный  DIN 603 М6х120 мм DIN 603 М6х120 ммDIN 603 М6х120 ммDIN2 
+                        </div>
+                        <div class="search__type">Товар</div>
+                      </div>
+                      <div class="search__price">28,50 грн</div>
+                    </li>
+                    <li>
+                      <div class="search__photo avatar-smaller">
+                        <img src="https://s3-alpha-sig.figma.com/img/711e/6993/dba19f192501a8f1a010aa1b418cc34a?Expires=1620604800&Signature=MWI8FrSK9SRLbGiL6sSgBkhpN3O3z9kUdAmpxII6WyFb33ENCVNZ2tZBVyRl-PtTOKRWaJlanqJ1R47z1JjnlWHp5YwSTB2AuP-C03YF2joA9uluMSCpp4yqMXER042S6Dc845Fahhky3DtL3WGsDI8Hky0ima-no8nE2lVkrmBSqlRjcCmfcWvkWb04KgY4YgKLFBH2nngR8Efc4qu5S0EQI2B4Nxg7MF-a0SaXqqxq1TEdsuWf045spUn2wUkDnKrEcJ-Nl4V8mxBL-86Bv-b746h1bNL0L34SwYn6EQPTDM~G5R8hEInJxCUNZ2CZ9sBrXr42kev1WSyQMgRWpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
+                      </div>
+                      <div class="search__found-content">
+                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
+                        <div class="search__type">Услуга</div>
+                      </div>
+                      <div class="search__price">28,50 грн</div>
+                    </li>
+                    <li>
+                      <div class="search__photo avatar-smaller">
+                        <img src="https://s3-alpha-sig.figma.com/img/711e/6993/dba19f192501a8f1a010aa1b418cc34a?Expires=1620604800&Signature=MWI8FrSK9SRLbGiL6sSgBkhpN3O3z9kUdAmpxII6WyFb33ENCVNZ2tZBVyRl-PtTOKRWaJlanqJ1R47z1JjnlWHp5YwSTB2AuP-C03YF2joA9uluMSCpp4yqMXER042S6Dc845Fahhky3DtL3WGsDI8Hky0ima-no8nE2lVkrmBSqlRjcCmfcWvkWb04KgY4YgKLFBH2nngR8Efc4qu5S0EQI2B4Nxg7MF-a0SaXqqxq1TEdsuWf045spUn2wUkDnKrEcJ-Nl4V8mxBL-86Bv-b746h1bNL0L34SwYn6EQPTDM~G5R8hEInJxCUNZ2CZ9sBrXr42kev1WSyQMgRWpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото">
+                      </div>
+                      <div class="search__found-content">
+                        <div class="search__name">Болт мебельный оцинкованный DIN 603 М6х120 мм</div>
+                        <div class="search__type">Услуга</div>
+                      </div>
+                      <div class="search__price">28,50 грн</div>
+                    </li>
+                  </ul>
+    
+                  <div class="search__categories-container">
+                    <ul class="search__category-list">
+                      <li class="search__category-item">
+                        <span class="search__name">Болты 
+                          <span class="search__quantity">(<span>28<span>)</span>
+                        </span>
+                        <div class="search__type">Категория товара</div>
+                      </li>
+                      <li class="search__category-item">
+                        <span class="search__name">Болт мебельный 
+                          <span class="search__quantity">(<span>228<span>)</span>
+                        </span>
+                        <div class="search__type">Категория товара</div>
+                      </li>
+                    </ul>
+    
+                    <ul class="search__category-list">
+                      <li class="search__category-item">
+                        <span class="search__name">Прикрутить 
+                          <span class="search__quantity">(<span>28<span>)</span>
+                        </span>
+                        <div class="search__type">Категория услуг</div>
+                      </li>
+                      <li class="search__category-item">
+                        <span class="search__name">Болт мебельный 
+                          <span class="search__quantity">(<span>228<span>)</span>
+                        </span>
+                        <div class="search__type">Категория услуг</div>
+                      </li>
+                    </ul>
+                  </div>
+    
+                </div>
+                <!-- /search__found-products-lis -->
+              </div>
+              <!-- /search__searchbar-wrap -->
+              
+              <div class="search__right-block">
+                <div class="search__city-dropdown">
+                  <div class="search__selected">
+                    <div class="search__selected-text">Вся Украина</div>
+                  </div>
+                  <div class="search__dropping-location">
+                    <ul class="search__region-list">
+                      <li>Вся Украина</li>
+                      <li>Винницкая область</li>
+                      <li>Днепропетровская область</li>
+                      <li>Волынская область</li>
+                      <li>Винницкая область</li>
+                      <li>Днепропетровская область</li>
+                      <li>Волынская область</li>
+                      <li>Винницкая область</li>
+                      <li>Днепропетровская область</li>
+                      <li>Волынская область</li>
+                      <li>Винницкая область</li>
+                      <li>Днепропетровская область</li>
+                      <li>Волынская область</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='search__find'>
+                  <div class="search__find-text">Найти</div>
+                </div>
+              </div> 
+            </div> 
+          </div> 
+    
+          <div class="subheader__popular">
+            <h3>Популярные запросы</h3>
+            <ul class="subheader__tag-list">
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/2ff6/7898/e3231f3f37baabd43f7f4db19c8caba5?Expires=1620604800&Signature=hi4PYO1FbmP-UFtbvhBgIdtA2lBC8Q0t7SqF1kkEsaDXLNW8t4sOJG9D7v45v9lBOD2xHGF647QwMsngWV-FH4n2mBDluwvkO64Zcq61zyUZXs25ZmFcSjNRrSq0O6NDQQZxine5b7JBerd3bVFog3Q13ISE9a5ZCixMNAGpH8vcVNDyvgobU92vRBDzN-uSBvdskpTwbzraQs-Lq1rnnr2N8xF-8Eq4DQmxrw6vhnEEY09B6eoZZ0PF06aRezhYxy6lhCfo7b1BKSHnFDxaREv21QYlOlunshtXeVe87KnECv~~dARTU2eFmqs~OOQxeIgYm-0NvTkK2q1dKtKojQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Болт 325</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Стеклоблок зеленый</li>
+              <li><img src="https://s3-alpha-sig.figma.com/img/13cd/d414/a1f4e16fbb7829e83b1ba7703cc7531d?Expires=1620604800&Signature=JQA352lEiGhM97kshnHGgFVQUH07eAb7bshZHVfobBosY~v5uFBXo9Ag1y9P5bgffvhfQsuVmKMb8pyKL9xONDY2WlVoYOYdQQRUMp0gDcuCTmRF49ouKfot9dzNAqdJUTSL55wm2lIVCNe~pJDI3LB3OiPCNbT8ZI0G~aNaWYAgAavV77W2fFQ0pNPOFMUsvK9JpBCYinuhmbNriSwiMMBpsQEibS4Hpz2uIiWRKBrd6yzBznneN92wA-INKgiztbzi0e3s0ENDw93qaIM048QcNGuXrNj0N7Av-5PQ7QPY2T5pgnBAJkHV4wTQJv8sW4RK9FjNlEv-lLtYeUm9oA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="иконка" />Кондиционеры</li>
+            </ul>
+          </div>
+    
+        </div> 
+      </div> 
+    </div> 
+    <!-- /subheader -->
+
+    <!-- promotion-list -->
     <div class="main__block-bg-gray">
       <div class="main__vertical-padding-container js-move-container ">
         <ul class="main__promotion-list js-move-list">
           <li class="main__promo-item js-move-item">
-            <img src="./assets/images/banner1.svg" alt="услуга">
+            <picture>
+              <source srcset="./assets/images/banner1-mobile.png" media="(max-width: 767px)" />
+              <img src="./assets/images/banner1.png" alt="услуга">
+            </picture>
           </li>
           <li class="main__promo-item js-move-item">
-            <img src="./assets/images/banner2.svg" alt="услуга">
+            <picture>
+              <source srcset="./assets/images/banner1-mobile.png" media="(max-width: 767px)" />
+              <img src="./assets/images/banner2.png" alt="услуга">
+            </picture>
           </li>
           <li class="main__promo-item js-move-item">
-            <img src="./assets/images/banner1.svg" alt="услуга">
+            <picture>
+              <source srcset="./assets/images/banner1-mobile.png" media="(max-width: 767px)" />
+              <img src="./assets/images/banner1.png" alt="услуга">
+            </picture>
           </li>
         </ul>
       </div>
     </div>
+    <!-- /promotion-list -->
 
+    <!-- categories -->
     <div class="container main__vertical-padding-container">
       <div class="categories">
         <h2 class="main__heading">Категории товаров</h2>
@@ -499,8 +508,10 @@
           смотреть все
         </button>
       </div> <!-- /categories -->
-    </div> <!-- /container -->
+    </div>
+    <!-- /categories -->
 
+    <!-- top-sales -->
     <div class="main__block-bg-gray">
       <div class="main__vertical-padding-container">
 
@@ -795,9 +806,6 @@
                     <g clip-path="url(#clip0)">
                     <path d="M1.41023 16.3873L1.41024 16.3873L1.41019 16.3856C1.40549 16.2249 1.51208 16.0774 1.67039 16.0308C1.67078 16.0306 1.67116 16.0305 1.67155 16.0304L25.2763 9.31838C25.2764 9.31834 25.2766 9.3183 25.2767 9.31825C25.4109 9.28051 25.5542 9.32382 25.645 9.42961C25.7357 9.5352 25.7569 9.6831 25.6983 9.81107L25.6981 9.81139L15.49 32.1321L15.4898 32.1325C15.468 32.1803 15.437 32.2209 15.3985 32.2539C15.3178 32.3232 15.2092 32.3543 15.1028 32.3343L15.0993 32.3337C14.9407 32.3051 14.8199 32.1703 14.8096 32.0078L14.8095 32.0065L14.0047 19.819L13.9799 19.4448L13.6138 19.3638L1.6885 16.724L1.6885 16.724L1.68722 16.7237C1.52895 16.6891 1.41448 16.5514 1.41023 16.3873Z" stroke="black"/>
                     </g>
-                    <defs>
-
-                    </defs>
                   </svg>
                 </div>
               </div>
@@ -2105,7 +2113,9 @@
         </ul>
       </div>
     </div>
+    <!-- /top-sales -->
 
+    <!-- offers -->
     <div class="offers main__vertical-padding-container">
       <div class="container">
         <h2 class="main__heading">Выгодные предложения</h2>
@@ -2124,7 +2134,9 @@
         </ul>
       </div>
     </div>
+    <!-- /offers -->
 
+    <!-- top-companies - advantages -->
     <div class="main__vertical-padding-container main__block-bg-gray">
       <div class="top-companies ">    
         <div class="container ">
@@ -2142,7 +2154,7 @@
             </li>
             <li class="top-companies__company-item js-move-item">
               <div class="top-companies__logo-wrap">
-                <img src="https://s3-alpha-sig.figma.com/img/6757/0d58/b9e24fc8ff27e0c590036a011fc09405?Expires=1619395200&Signature=ewfgZfQam1iTuagLLNdsLdx7pBDFSGeESfc2Yh~4PLcMbVAiahPA9Gl6oc3gZsolEfX-xaG5WwccQmxfHQRuoD~Ke9JMN8uDRGaA5xGGJYqJeNe7B~yXCVPokio47wrwQE6BPP1Jhifp1W6QHGRroesAouF5qHR1STh2-mbgtNebOTiIRiFWZqkj440ihStvkCuwXGmBJcsiR5JNiFlhIPpRgsrAZ5Mty7~2h21FgIwXA84GUW5IiSGcqDymTj0VSJ-oP-k48Q~LOdXwWcEmfVYVP0HfFq6O-J9UXHk14kCIXQH6Q9r1iR774SEoIPPsBjukVe9Rxn66L8VG4EFKYA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="логотип компании">
+                <img src="https://s3-alpha-sig.figma.com/img/f84b/96ed/9989ece12ecf53ed4f3cf59e71526fcf?Expires=1621209600&Signature=FpbTxtVoa58wO~N-krzEN6-sX7NTiA1p7QC7vIQz3ra89pLHZQkhInjv~gveRf-eNY1ZExUUE3-j6Aec6AS0leTBTQPVgJtnE~jNgH8hMdJ3v7d2MQhfZsuLyHfVL1sVrBL1a2IYyWCEsubT4Mr7w5S4aNZdiN~oR9fktCHD3m9x4Lpw4ElTvFeLUJLTeAkYEg2wHlPgRF7SBsMih17k2pK6XuYrTnD8rLutKfdcOInOG~TroIBrC~JRTnDlQD6YUZRqey~49Ha1Z8WOsoZq0dZvumSt6g3ebwQMLIVZVuYRIoeSw44Amk5-qkPBGTPYk8qf4FzGsWhj3ykMkb0CZg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="логотип компании">
               </div>
               <div class="top-companies__name">
                 logostroy
@@ -2190,15 +2202,39 @@
         </div>
         <div class="js-move-container">
           <ul class="advantages__list js-move-list">
-            <li class="advantages__item js-move-item"></li>
-            <li class="advantages__item js-move-item"></li>
-            <li class="advantages__item js-move-item"></li>
-            <li class="advantages__item js-move-item"></li>
+            <li class="advantages__item js-move-item">
+              <picture>
+                <source srcset="./assets/images/advantage-calc-mobile.png" media="(max-width: 767px)" />
+                <source srcset="./assets/images/advantage-service-tablet.png" media="(max-width: 1200px)" />
+                <img src="./assets/images/advantage-calc.png" alt="калькулятор">
+              </picture>
+            </li>
+            <li class="advantages__item js-move-item">
+              <picture>
+                <source srcset="./assets/images/advantage-calc-mobile.png" media="(max-width: 767px)" />
+                <source srcset="./assets/images/advantage-service-tablet.png" media="(max-width: 1200px)" />
+                <img src="./assets/images/advantage-delivery.png" alt="доставка">
+              </picture>
+            </li>
+            <li class="advantages__item js-move-item">
+              <picture>
+                <source srcset="./assets/images/advantage-calc-mobile.png" media="(max-width: 767px)" />
+                <source srcset="./assets/images/advantage-service-tablet.png" media="(max-width: 1200px)" />
+                <img src="./assets/images/advantage-service.png" alt="сервис">
+              </picture>
+            </li>
+            <li class="advantages__item js-move-item">
+              <picture>
+                <source srcset="./assets/images/advantage-calc-mobile.png" media="(max-width: 767px)" />
+                <source srcset="./assets/images/advantage-service-tablet.png" media="(max-width: 1200px)" />
+                <img src="./assets/images/advantage-calc.png" alt="калькулятор">
+              </picture>
+            </li>
           </ul>
         </div>
       </div>      
     </div>
-
+    <!-- /top-companies - advantages -->
 
     <div class="mobile-app">
       <div class="container">
@@ -2228,7 +2264,8 @@
           <img class="mobile-app__main-image" src="https://s3-alpha-sig.figma.com/img/f919/b8f6/35a7c41113fe15673dfdb5284424b998?Expires=1620604800&Signature=MEoV~O0bVhZpN9s7kHqT~QiyhomDXpstl~3rGFk1bP22mVN30mCZXQsSgPC4DnjmJxAU7f-h3lWBdHEPQ6-ofV0Zye9fcJsFjfmH3YUWMBgwvT2IkqQ0dOhCeKb6-QGuJzb0pO6OMGMmtjGgN6Tpsfcnk-2NRNGCxRAhOr6VEl~J2ZmLEw4TaAVl8Qwl-~N4dt7mDvI9r4pFkCPBUalvlryDd6PKtqaU1n9gGGpppVz0rVsHVVQwm7jwSOwrNLv2IGHg07QyMdHT1vpxh1KkiZgewULh6OowLXQ5ZcddHHIM31YBz7ApHFNfRqtVwG05dhY~UhYTWVli9OmJ1DByag__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="изображение">
         </div> <!-- /mobile-app__inner -->
       </div> <!-- /mobile-app -->
-    </div> <!-- /mobile-app -->
+    </div>
+    <!-- /mobile-app -->
 
     <div class="news-subscribe">
       <div class="container">
@@ -2252,13 +2289,15 @@
           </div> <!-- /news-subscribe__subscribe-wrap -->
         </div> <!-- /news-subscribe__inner -->
       </div> <!-- /container -->
-    </div> <!-- /news-subscribe -->
+    </div> 
+    <!-- /news-subscribe -->
+
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class='footer__inner'>
-        <div class="footer__wrapper"> <!-- RENAME IT -->
+        <div class="footer__wrapper">
           
           <div class="footer__column">
             <div class="footer__col-name">Покупателям</div>
@@ -2357,9 +2396,9 @@
                 </div>
               </div>
   
-              <div class="bottom-block__logo">
+              <a href="#" target="_blank" class="bottom-block__logo">
                 <img class="aimix-logo" src="./assets/images/aimix-logo.svg" alt="логотип" />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -2418,7 +2457,7 @@
 
     // search
     const citiesBtn = document.querySelector('.search__selected');
-    const citiesDropping = document.querySelector('.search__dropping-cities');
+    const citiesDropping = document.querySelector('.search__dropping-location');
     citiesBtn.onclick = () => citiesDropping.classList.toggle('active');
   </script>
   <!-- ========================================= TESTING ========================================= -->

@@ -1,0 +1,378 @@
+.search {
+  .select-city-active {
+    visibility: visible;
+  }
+
+  &__form {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: relative;
+  }
+
+  &__arrow-down {
+    position: absolute; 
+    top: 23px; 
+    right: 22px;
+  }
+
+  &__right-block {
+    display: flex;
+  }
+
+  &__city-dropdown,
+  &__input {
+    box-sizing: border-box;
+    border: 1px solid #BDBDBD;
+    background-color: inherit;
+    border-radius: 10px;
+  }
+
+  &__city-dropdown {
+    width: 249px;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  &__dropping-location,
+  &__dropping-results {
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4%);
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__dropping-results {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 17px 0 0 0;
+  }
+
+  &__selected {
+    padding: 15px;
+    padding-left: 55px;
+    border-left: 1px solid #BDBDBD;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: url('../assets/icons/search/location.svg');
+      position: absolute;
+      left: 23px;
+      top: 15px;
+    }
+  }
+
+  &__dropping-location {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    top: 60px;
+    box-shadow: 0 3px 15px -4px rgba(68, 68, 68, 0.4);
+    border-radius: 10px;
+    min-width: 268px;
+    padding: 10px 0;
+  }
+
+  &__region-list {
+    // mozilla scrollbar 
+    scrollbar-width: thin;
+    scrollbar-color: #E0E0E0 transparent;
+
+    &::-webkit-scrollbar{
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #E0E0E0;
+      border-radius: 2px;
+      padding-right: 5px;
+    }
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+    max-height: 290px;
+    overflow-y: auto;
+
+    li {
+      user-select: none;
+      cursor: pointer;
+      padding: 17px 20px;
+      position: relative;
+
+      &:hover {
+        background-color: #F2F2F2;
+      }
+
+      &::after {
+        position: absolute;
+        right: -5px;
+      }
+    }
+  }
+
+  &__find {
+    background-color: #FFC813;
+    box-sizing: border-box;
+    height: 100%;
+    width: 147px;
+    padding-right: 70px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 69px 0 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: url('../assets/icons/search/find.svg');
+      position: absolute;      
+      right: 34px;
+      top: 10px;
+    }
+  }
+
+  &__input,
+  &__find {
+    outline: none;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    padding-left: 30px;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    &::placeholder {
+      font-size: 14px;
+      color: #828282;
+    }
+  }
+
+  &__searchbar-wrap {
+    width: 100%;
+    z-index: 3;
+  }
+
+  &__dropping-results {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  &__found-products-list {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 8px 42px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      align-items: center;
+
+      &:hover {
+        background-color: #F2F2F2;
+      }
+    }
+  }
+
+  &__all-results-btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 17px;
+    color: #F2994A;
+    font-size: 10px;
+    margin-left: 36px;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url('../assets/icons/search/orange-arrow.svg');
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      top: 1px;
+    }
+  }
+
+  &__photo {
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  &__price {
+    flex-shrink: 0;
+    margin-left: 15px;
+  }
+
+  &__found-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__name {
+    line-height: 18.9px;
+    max-width: 560px;
+  }
+
+  &__type {
+    color: #BDBDBD;
+    font-size: 10px;
+  }
+
+  &__categories-container {
+    padding: 0 35px;
+  }
+
+  &__category-list {
+    padding: 0 0 20px 6px;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid #E0E0E0;
+
+    li {
+      margin-top: 12px;    
+      cursor: pointer;  
+    }
+  }
+
+
+
+  &__quantity {
+    color: #BDBDBD;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search {
+    &__dropping-results {
+      padding-left: 0;
+      padding-right: 0;
+    }
+      
+    &__name,
+    &__price {
+      font-size: 10px;
+      line-height: 13.5px;
+    }
+
+    &__found-products-list {
+      li {
+        padding: 3px 25px 3px 15px;
+      }
+    }
+
+    &__category-list {
+      padding: 0 0 15px 15px;
+    }
+
+    &__categories-container {
+      padding: 0;
+    }
+
+    &__all-results-btn {
+      margin-bottom: 8px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search {
+    &__find::after{
+      top: 50%;
+      right: 50%;  
+    }
+
+    &__dropping-location {
+      top: 40px;
+      right: -45px;
+    }
+
+    &__city-dropdown,
+    &__selected,
+    &__find {
+      width: 46px;
+      padding: 0;
+    }
+
+    &__selected-text,
+    &__find-text {
+      display: none;
+    }
+
+    &__selected::after {
+      top: 50%;
+      left: 50%;
+    } 
+
+    &__find::after {
+      top: 4px;
+      right: 8px;
+    }
+
+    &__selected::before {
+      content: none;
+    }
+
+    &__city-dropdown,
+    &__input {
+      height: 100%;
+    }
+
+    &__form {
+      height: 36px;
+    }
+
+    &__input {
+      padding-left: 14px;
+    }
+
+    &__city-dropdown {
+      border-left: 1px solid #BDBDBD;
+    }
+
+    &__selected {
+      &::after {
+        top: 7px;
+        left: 12px;
+      }
+    }
+
+    &__dropping-results {
+      position: absolute;
+    }
+
+    &__dropping-results {
+      margin-top: 5px;
+    }
+
+  }
+}

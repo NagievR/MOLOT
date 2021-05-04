@@ -1,8 +1,6 @@
 .header {
 
-  &__head {
-    background-color: #002D04;
-  }
+  background-color: #002D04;
 
   &__head-inner {
     display: flex;
@@ -36,6 +34,13 @@
     }
   }
 
+  &__icon-wrap {
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   &__place-product {
     outline: none;
     border: none;
@@ -55,14 +60,7 @@
     align-items: center;
     position: relative;
   }
-
-  &__icon-wrap {
-    width: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
+  
   &__favorite-count,
   &__cart-count {
     position: absolute;
@@ -78,57 +76,40 @@
     right: -11px;
     color: #000;
   }
+  
+  // 
 
-  &__body {
-    background-image: url('./../assets/images/background.svg');
-    background-size: cover;
-    background-position: center;
-  }
 
-  &__body-inner {
-    margin: 50px 0 60px 0;
-  }
 
-  &__heading {
-    margin: 0 0 35px 0;
-    font-size: 50px;
-    color: #fff;
-    align-items: center;
-    font-weight: 400;
-    text-align: center;
-  }
 
-  &__search {
-    margin-bottom: 50px;
-  }
 
   // ========== burger  
-    &__burger {
-      display: none;
-      cursor: pointer;
-      position: relative;
-      width: 24px;
-      height: 16px;
-    }
-    &__burger span,
-    &__burger::after,
-    &__burger::before {
-      content: '';
-      transition: 0.35s;
-      position: absolute;
-      background-color: #fff;
-      width: 100%;
-      height: 1px;
-    }
-    &__burger span {
-      top: 9px;
-    }
-    &__burger::after {
-      bottom: 0;
-    }
-    &__burger::before {
-      top: 3px;
-    }
+  &__burger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 16px;
+  }
+  &__burger span,
+  &__burger::after,
+  &__burger::before {
+    content: '';
+    transition: 0.35s;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+  }
+  &__burger span {
+    top: 9px;
+  }
+  &__burger::after {
+    bottom: 0;
+  }
+  &__burger::before {
+    top: 3px;
+  }
   // =================
 }
 
@@ -154,6 +135,21 @@
       padding: 7px 0;
     }
 
+    &__options {
+      display: none;
+    }
+
+    &__logo {
+      height: 21px;
+      width: 80px;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    //
+
     &__body-inner {
       margin-top: 10px;
     }
@@ -162,23 +158,6 @@
       margin-bottom: 14px;
       font-size: 22px;
     }
-
-    &__logo {
-      height: 21px;
-      width: 80px;
-    }
-
-    &__options {
-      display: none;
-    }
-
-    &__burger {
-      display: block;
-    }
-    
-    // &__search {
-    //   margin-bottom: 20px;
-    // }
 
   }
 }
