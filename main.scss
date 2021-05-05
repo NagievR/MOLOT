@@ -1,0 +1,12 @@
+@import "./scss/base/font";
+@import "./scss/vendors/normalize";
+
+// reused/global
+@import "./scss/layout/cards";
+@import "./scss/layout/containers";
+@import "./scss/layout/dropdown";
+@import "./scss/layout/filters";
+@import "./scss/layout/all-ads";
+
+// main
+@import "./scss/layout/main";

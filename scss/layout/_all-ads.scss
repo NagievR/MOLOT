@@ -1,0 +1,30 @@
+.all-ads {
+  display: none;
+  align-items: center;
+
+  &__text {
+    font-size: 12px;
+  }
+
+  &__btn {
+    padding: 5px;
+    position: relative;
+    width: 110px;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .all-ads {
+    display: flex;
+    
+  }
+}
