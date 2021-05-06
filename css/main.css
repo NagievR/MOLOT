@@ -1416,7 +1416,10 @@ template {
 
 .main__col {
   display: flex;
-  width: 50%;
+}
+
+.main__col:nth-child(1) {
+  width: 550px;
 }
 
 .main__seller {
@@ -1429,14 +1432,21 @@ template {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 15px 20px 15px 10px;
   justify-content: space-between;
+}
+
+.main__seller-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
 }
 
 .main__seller-phone {
   color: #000;
   text-decoration: none;
   font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .main__seller-media {
@@ -1451,6 +1461,7 @@ template {
   display: flex;
   align-self: center;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .main__seller-media li svg {
@@ -1481,6 +1492,33 @@ template {
   margin-right: 15px;
 }
 
+.main__shop-btn {
+  outline: none;
+  border: 2px solid #FFC813;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main__mobile-shop-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.main__mobile-rating {
+  display: none;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.main__location-star {
+  display: flex;
+}
+
 .main__sales-quantity, .main__seller-reviews {
   position: relative;
 }
@@ -1501,7 +1539,7 @@ template {
   color: #828282;
 }
 
-.main__seller-location img {
+.main__seller-location svg {
   transform: translateY(3px);
 }
 
@@ -1548,7 +1586,7 @@ template {
 }
 
 .main__search-wrap {
-  width: 660px;
+  width: 100%;
   border: 1px solid #E0E0E0;
   background-color: #fff;
   border-radius: 10px;
@@ -1602,10 +1640,17 @@ template {
     width: 220px;
   }
   .main__seller {
-    padding: 0 5px;
+    padding-left: 5px;
+    padding-right: 20px;
   }
   .main__seller-reviews {
     margin-right: 30px;
+  }
+  .main__shop-btn {
+    display: none;
+  }
+  .main__seller-contacts {
+    margin: 0;
   }
 }
 
@@ -1613,12 +1658,60 @@ template {
   .main__category-dropdown, .main__search-wrap {
     display: none;
   }
+  .main__found {
+    margin-bottom: 15px;
+  }
+  .main__ads-wrapper {
+    border: none;
+    padding-top: 30px;
+  }
+  .main__seller {
+    height: 52px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
   .main__options {
     background-color: #fff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 0 20px;
     height: 40px;
+    margin-bottom: 0;
     justify-content: space-between;
+  }
+  .main__seller-name {
+    font-size: 14px;
+  }
+  .main__seller-summary {
+    display: none;
+  }
+  .main__seller-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main__seller-location {
+    font-size: 10px;
+  }
+  .main__seller-location svg {
+    height: 11px;
+    width: 11px;
+    transform: translateY(2px);
+  }
+  .main__logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .main__seller-contacts {
+    display: none;
+  }
+  .main__mobile-shop-btn {
+    display: block;
+  }
+  .main__seller {
+    padding: 5px;
+  }
+  .main__mobile-rating {
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
